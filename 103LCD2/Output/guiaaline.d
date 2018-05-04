@@ -1,0 +1,13 @@
+..\output\guiaaline.o: ..\GUI\AntiAlias\GUIAALine.c
+..\output\guiaaline.o: ..\GUI\Core\GUI_Protected.h
+..\output\guiaaline.o: ..\GUI\Core\GUI.h
+..\output\guiaaline.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\guiaaline.o: ..\Config\GUIConf.h
+..\output\guiaaline.o: ..\GUI\Core\GUIType.h
+..\output\guiaaline.o: ..\GUI\Core\LCD.h
+..\output\guiaaline.o: ..\GUI\Core\GUIVersion.h
+..\output\guiaaline.o: ..\GUI\Core\LCD_Protected.h
+..\output\guiaaline.o: ..\GUI\Core\GUIDebug.h
+..\output\guiaaline.o: ..\GUI\Core\GUI_X.h
+..\output\guiaaline.o: ..\GUI\WM\WM_GUI.h
+..\output\guiaaline.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h

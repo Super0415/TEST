@@ -1,0 +1,9 @@
+..\output\checkbox_create.o: ..\GUI\Widget\CHECKBOX_Create.c
+..\output\checkbox_create.o: ..\GUI\Widget\CHECKBOX.h
+..\output\checkbox_create.o: ..\GUI\WM\WM.h
+..\output\checkbox_create.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\checkbox_create.o: ..\Config\GUIConf.h
+..\output\checkbox_create.o: ..\GUI\Core\GUIType.h
+..\output\checkbox_create.o: ..\GUI\Core\LCD.h
+..\output\checkbox_create.o: ..\GUI\WM\WM_GUI.h
+..\output\checkbox_create.o: ..\GUI\Widget\DIALOG_Intern.h

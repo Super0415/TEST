@@ -1,0 +1,11 @@
+..\output\radio_createindirect.o: ..\GUI\Widget\RADIO_CreateIndirect.c
+..\output\radio_createindirect.o: ..\GUI\Core\GUI.h
+..\output\radio_createindirect.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\radio_createindirect.o: ..\Config\GUIConf.h
+..\output\radio_createindirect.o: ..\GUI\Core\GUIType.h
+..\output\radio_createindirect.o: ..\GUI\Core\LCD.h
+..\output\radio_createindirect.o: ..\GUI\Core\GUIVersion.h
+..\output\radio_createindirect.o: ..\GUI\Widget\RADIO.h
+..\output\radio_createindirect.o: ..\GUI\WM\WM.h
+..\output\radio_createindirect.o: ..\GUI\WM\WM_GUI.h
+..\output\radio_createindirect.o: ..\GUI\Widget\DIALOG_Intern.h

@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+".\obj\led.o"
+".\obj\system.o"
+".\obj\key.o"
+".\obj\beep.o"
+".\obj\nixietube.o"
+".\obj\usart.o"
+".\obj\gui.o"
+".\obj\lcd_driver.o"
+".\obj\stm32f10x.o"
+".\obj\main.o"
+--strict --scatter ".\obj\pro.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\obj\pro.map" -o .\obj\pro.axf

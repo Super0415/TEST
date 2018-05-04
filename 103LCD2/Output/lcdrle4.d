@@ -1,0 +1,17 @@
+..\output\lcdrle4.o: ..\GUI\Core\LCDRLE4.c
+..\output\lcdrle4.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\output\lcdrle4.o: ..\GUI\Core\LCD.h
+..\output\lcdrle4.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\lcdrle4.o: ..\Config\GUIConf.h
+..\output\lcdrle4.o: ..\GUI\Core\GUI_Private.h
+..\output\lcdrle4.o: ..\GUI\Core\GUI_Protected.h
+..\output\lcdrle4.o: ..\GUI\Core\GUI.h
+..\output\lcdrle4.o: ..\GUI\Core\GUIType.h
+..\output\lcdrle4.o: ..\GUI\Core\GUIVersion.h
+..\output\lcdrle4.o: ..\GUI\Core\LCD_Protected.h
+..\output\lcdrle4.o: ..\GUI\Core\GUIDebug.h
+..\output\lcdrle4.o: ..\GUI\Core\GUI_X.h
+..\output\lcdrle4.o: ..\GUI\WM\WM_GUI.h
+..\output\lcdrle4.o: ..\GUI\Core\LCD_Private.h
+..\output\lcdrle4.o: ..\GUI\Core\LCD_ConfDefaults.h
+..\output\lcdrle4.o: ..\Config\LCDConf.h

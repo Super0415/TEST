@@ -1,0 +1,17 @@
+..\output\guicurs.o: ..\GUI\Core\GUICurs.c
+..\output\guicurs.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\output\guicurs.o: ..\GUI\Core\GUI_Private.h
+..\output\guicurs.o: ..\GUI\Core\GUI_Protected.h
+..\output\guicurs.o: ..\GUI\Core\GUI.h
+..\output\guicurs.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\guicurs.o: ..\Config\GUIConf.h
+..\output\guicurs.o: ..\GUI\Core\GUIType.h
+..\output\guicurs.o: ..\GUI\Core\LCD.h
+..\output\guicurs.o: ..\GUI\Core\GUIVersion.h
+..\output\guicurs.o: ..\GUI\Core\LCD_Protected.h
+..\output\guicurs.o: ..\GUI\Core\GUIDebug.h
+..\output\guicurs.o: ..\GUI\Core\GUI_X.h
+..\output\guicurs.o: ..\GUI\WM\WM_GUI.h
+..\output\guicurs.o: ..\GUI\Core\LCD_Private.h
+..\output\guicurs.o: ..\GUI\Core\LCD_ConfDefaults.h
+..\output\guicurs.o: ..\Config\LCDConf.h

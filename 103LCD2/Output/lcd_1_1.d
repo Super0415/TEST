@@ -1,0 +1,12 @@
+..\output\lcd_1_1.o: ..\GUI\MultiLayer\LCD_1.c
+..\output\lcd_1_1.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\output\lcd_1_1.o: ..\GUI\Core\LCD_Private.h
+..\output\lcd_1_1.o: ..\GUI\Core\LCD_ConfDefaults.h
+..\output\lcd_1_1.o: ..\Config\LCDConf.h
+..\output\lcd_1_1.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\lcd_1_1.o: ..\Config\GUIConf.h
+..\output\lcd_1_1.o: ..\GUI\Core\LCD_Protected.h
+..\output\lcd_1_1.o: ..\GUI\Core\LCD.h
+..\output\lcd_1_1.o: ..\GUI\Core\GUI.h
+..\output\lcd_1_1.o: ..\GUI\Core\GUIType.h
+..\output\lcd_1_1.o: ..\GUI\Core\GUIVersion.h

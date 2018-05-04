@@ -1,0 +1,13 @@
+..\output\guidev_getxsize.o: ..\GUI\MemDev\GUIDEV_GetXSize.c
+..\output\guidev_getxsize.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+..\output\guidev_getxsize.o: ..\GUI\Core\GUI_Protected.h
+..\output\guidev_getxsize.o: ..\GUI\Core\GUI.h
+..\output\guidev_getxsize.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\guidev_getxsize.o: ..\Config\GUIConf.h
+..\output\guidev_getxsize.o: ..\GUI\Core\GUIType.h
+..\output\guidev_getxsize.o: ..\GUI\Core\LCD.h
+..\output\guidev_getxsize.o: ..\GUI\Core\GUIVersion.h
+..\output\guidev_getxsize.o: ..\GUI\Core\LCD_Protected.h
+..\output\guidev_getxsize.o: ..\GUI\Core\GUIDebug.h
+..\output\guidev_getxsize.o: ..\GUI\Core\GUI_X.h
+..\output\guidev_getxsize.o: ..\GUI\WM\WM_GUI.h

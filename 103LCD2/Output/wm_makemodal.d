@@ -1,0 +1,15 @@
+..\output\wm_makemodal.o: ..\GUI\WM\WM_MakeModal.c
+..\output\wm_makemodal.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\output\wm_makemodal.o: ..\GUI\WM\WM_Intern.h
+..\output\wm_makemodal.o: ..\GUI\WM\WM.h
+..\output\wm_makemodal.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\wm_makemodal.o: ..\Config\GUIConf.h
+..\output\wm_makemodal.o: ..\GUI\Core\GUIType.h
+..\output\wm_makemodal.o: ..\GUI\Core\LCD.h
+..\output\wm_makemodal.o: ..\GUI\WM\WM_GUI.h
+..\output\wm_makemodal.o: ..\GUI\Core\GUI_Protected.h
+..\output\wm_makemodal.o: ..\GUI\Core\GUI.h
+..\output\wm_makemodal.o: ..\GUI\Core\GUIVersion.h
+..\output\wm_makemodal.o: ..\GUI\Core\LCD_Protected.h
+..\output\wm_makemodal.o: ..\GUI\Core\GUIDebug.h
+..\output\wm_makemodal.o: ..\GUI\Core\GUI_X.h

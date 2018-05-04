@@ -1,0 +1,14 @@
+..\output\guicharline.o: ..\GUI\Core\GUICharLine.c
+..\output\guicharline.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\output\guicharline.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+..\output\guicharline.o: ..\GUI\Core\GUI_Protected.h
+..\output\guicharline.o: ..\GUI\Core\GUI.h
+..\output\guicharline.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\guicharline.o: ..\Config\GUIConf.h
+..\output\guicharline.o: ..\GUI\Core\GUIType.h
+..\output\guicharline.o: ..\GUI\Core\LCD.h
+..\output\guicharline.o: ..\GUI\Core\GUIVersion.h
+..\output\guicharline.o: ..\GUI\Core\LCD_Protected.h
+..\output\guicharline.o: ..\GUI\Core\GUIDebug.h
+..\output\guicharline.o: ..\GUI\Core\GUI_X.h
+..\output\guicharline.o: ..\GUI\WM\WM_GUI.h

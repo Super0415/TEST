@@ -1,0 +1,28 @@
+Dependencies for Project 'pro', Target 'Target 1': (DO NOT MODIFY !)
+F (.\app\led\led.c)(0x56724D90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\led.o --omf_browse .\obj\led.crf --depend .\obj\led.d)
+I (app\led\led.h)(0x56724D90)
+I (.\user\stm32f10x.h)(0x4D783CB4)
+F (.\app\system\system.c)(0x56724D90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\system.o --omf_browse .\obj\system.crf --depend .\obj\system.d)
+I (app\system\system.h)(0x5AAB64BF)
+I (.\user\stm32f10x.h)(0x4D783CB4)
+F (.\app\key\key.c)(0x56724D90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\key.o --omf_browse .\obj\key.crf --depend .\obj\key.d)
+I (app\key\key.h)(0x56724D90)
+I (.\user\stm32f10x.h)(0x4D783CB4)
+F (.\app\beep\beep.c)(0x56724D90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\beep.o --omf_browse .\obj\beep.crf --depend .\obj\beep.d)
+I (app\beep\beep.h)(0x56724D90)
+I (.\user\stm32f10x.h)(0x4D783CB4)
+F (.\app\nixieTube\nixietube.c)(0x56724D90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\nixietube.o --omf_browse .\obj\nixietube.crf --depend .\obj\nixietube.d)
+I (app\nixieTube\nixietube.h)(0x56724D90)
+I (.\user\stm32f10x.h)(0x4D783CB4)
+F (.\app\usart\usart.c)(0x56724D90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\usart.o --omf_browse .\obj\usart.crf --depend .\obj\usart.d)
+I (app\usart\usart.h)(0x56724D90)
+I (.\user\stm32f10x.h)(0x4D783CB4)
+F (.\app\gui\gui.c)(0x582C12D4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\gui.o --omf_browse .\obj\gui.crf --depend .\obj\gui.d)
+I (app\gui\gui.h)(0x56724D90)
+I (.\user\stm32f10x.h)(0x4D783CB4)
+F (.\app\lcd\lcd_driver.c)(0x582C129D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\lcd_driver.o --omf_browse .\obj\lcd_driver.crf --depend .\obj\lcd_driver.d)
+I (app\lcd\lcd_driver.h)(0x5AAB64E9)
+I (.\user\stm32f10x.h)(0x4D783CB4)
+F (.\STM32F10x.s)(0x56724D90)(--cpu Cortex-M3 -g --apcs=interwork -I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x--pd "__UVISION_VERSION SETA 517"--list .\obj\stm32f10x.lst --xref -o .\obj\stm32f10x.o --depend .\obj\stm32f10x.d)
+F (.\user\main.c)(0x56724D90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\user -I.\app\led -I.\app\system -I.\app\key -I.\app\beep -I.\app\nixieTube -I.\app\usart -I.\app\lcd -I.\app\gui-I D:\Keil5\ARM\RV31\INC-I D:\Keil5\ARM\CMSIS\Include-I D:\Keil5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (.\user\stm32f10x.h)(0x4D783CB4)

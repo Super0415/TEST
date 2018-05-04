@@ -1,0 +1,13 @@
+..\output\guitime.o: ..\GUI\Core\GUITime.c
+..\output\guitime.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\output\guitime.o: ..\GUI\Core\GUI_Protected.h
+..\output\guitime.o: ..\GUI\Core\GUI.h
+..\output\guitime.o: ..\GUI\Core\GUI_ConfDefaults.h
+..\output\guitime.o: ..\Config\GUIConf.h
+..\output\guitime.o: ..\GUI\Core\GUIType.h
+..\output\guitime.o: ..\GUI\Core\LCD.h
+..\output\guitime.o: ..\GUI\Core\GUIVersion.h
+..\output\guitime.o: ..\GUI\Core\LCD_Protected.h
+..\output\guitime.o: ..\GUI\Core\GUIDebug.h
+..\output\guitime.o: ..\GUI\Core\GUI_X.h
+..\output\guitime.o: ..\GUI\WM\WM_GUI.h
