@@ -12,14 +12,9 @@
 /* ******************************************************************** */
 /*                                main()                                */
 /* ******************************************************************** */
+int TempNum[30];
 int main (void)
 { 
-//    GPIO_InitTypeDef GPIO_InitStructure;
-//    RCC_APB2PeriphClockCmd(KEY_GPIO_CLK, ENABLE);
-//    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
-//    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU ;
-//    GPIO_Init(GPIOA, &GPIO_InitStructure);
-  
   OS_INT_DIS();                            /* Disable interrupts      */
     (void)FWInitRCC();                       /* initialize the RCC      */
     (void)FWInitClkHSE();                    /* initialize the HSE Clk  */

@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\IAR8.22\common\bin\cspybat" -f "C:\Users\Administrator\Desktop\Soft\TEST\SoftGenSET\settings\SoftGenSet.Debug.general.xcl" --backend -f "C:\Users\Administrator\Desktop\Soft\TEST\SoftGenSET\settings\SoftGenSet.Debug.driver.xcl" 
+& "D:\IAR8.22\common\bin\cspybat" -f "E:\程序库\TEST\4800\NewVerb\SoftGenSET00\settings\SoftGenSet.Debug.general.xcl" --backend -f "E:\程序库\TEST\4800\NewVerb\SoftGenSET00\settings\SoftGenSet.Debug.driver.xcl" 
 }
 else
 {
-& "D:\IAR8.22\common\bin\cspybat" -f "C:\Users\Administrator\Desktop\Soft\TEST\SoftGenSET\settings\SoftGenSet.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Administrator\Desktop\Soft\TEST\SoftGenSET\settings\SoftGenSet.Debug.driver.xcl" 
+& "D:\IAR8.22\common\bin\cspybat" -f "E:\程序库\TEST\4800\NewVerb\SoftGenSET00\settings\SoftGenSet.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\程序库\TEST\4800\NewVerb\SoftGenSET00\settings\SoftGenSet.Debug.driver.xcl" 
 }

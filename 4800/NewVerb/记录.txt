@@ -1,5 +1,10 @@
-2018-5-5   SoftGenSET02
-        1.由于新电路板出现故障，为方便调试程序，在SoftGenSET01的基础上进行新程序逻辑测试，端口定义完全不同，这个版本只适用于测试程序逻辑。
+2018-5-8   
+        1.输入输出初始化 SoftGenSET012
+        2.转速TIM3初始化 SoftGenSET013
+
+2018-5-5   SoftGenSET011
+        1.暂时查出问题出现在XIOConfigREMAP函数中，使用库函数中的    GPIO_PinRemapConfig替换
+
 
 2018-5-4  SoftGenSET01 - SoftGenSET011
         1.基本按成端口引脚的配置，但是在SWD/JTAG重映像出问题，暂时测试问题
