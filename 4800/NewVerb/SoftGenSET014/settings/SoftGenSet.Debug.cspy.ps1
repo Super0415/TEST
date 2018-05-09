@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\IAR8.22\common\bin\cspybat" -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET013TEST\settings\SoftGenSet.Debug.general.xcl" --backend -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET013TEST\settings\SoftGenSet.Debug.driver.xcl" 
+& "D:\IAR8.22\common\bin\cspybat" -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET014\settings\SoftGenSet.Debug.general.xcl" --backend -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET014\settings\SoftGenSet.Debug.driver.xcl" 
 }
 else
 {
-& "D:\IAR8.22\common\bin\cspybat" -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET013TEST\settings\SoftGenSet.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET013TEST\settings\SoftGenSet.Debug.driver.xcl" 
+& "D:\IAR8.22\common\bin\cspybat" -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET014\settings\SoftGenSet.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET014\settings\SoftGenSet.Debug.driver.xcl" 
 }

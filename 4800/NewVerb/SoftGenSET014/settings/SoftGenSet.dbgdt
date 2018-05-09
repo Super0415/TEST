@@ -141,7 +141,7 @@
                     <item>NumTemp</item>
                     <item>aDBMeasu</item>
                     <item>NumTemp[50]</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

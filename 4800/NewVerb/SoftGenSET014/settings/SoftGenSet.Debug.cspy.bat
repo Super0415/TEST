@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR8.22\common\bin\cspybat" -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET013TEST\settings\SoftGenSet.Debug.general.xcl" --backend -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET013TEST\settings\SoftGenSet.Debug.driver.xcl" 
+"D:\IAR8.22\common\bin\cspybat" -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET014\settings\SoftGenSet.Debug.general.xcl" --backend -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET014\settings\SoftGenSet.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR8.22\common\bin\cspybat" -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET013TEST\settings\SoftGenSet.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET013TEST\settings\SoftGenSet.Debug.driver.xcl" 
+"D:\IAR8.22\common\bin\cspybat" -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET014\settings\SoftGenSet.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET014\settings\SoftGenSet.Debug.driver.xcl" 
 
 @echo off 
 :end
