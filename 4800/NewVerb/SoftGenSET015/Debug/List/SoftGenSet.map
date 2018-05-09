@@ -1,0 +1,1746 @@
+###############################################################################
+#
+# IAR ELF Linker V8.22.2.15995/W32 for ARM                08/May/2018  17:07:36
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Exe\SoftGenSet.out
+#    Map file     =  
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\List\SoftGenSet.map
+#    Command line =  
+#        -f C:\Users\ADMINI~1\AppData\Local\Temp\EWBC9D.tmp
+#        (E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\arm_bitreversal.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\arm_bitreversal2.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\arm_cfft_f32.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\arm_cfft_radix8_f32.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\arm_common_tables.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\ASMCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\CAN1Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\CAN2Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\CCPCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\CTLCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\DBCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\FFTCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\FWCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\LCDCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\misc.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\OSCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\RTCCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SAEJ1939.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SCI1Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SCI2Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SCI3Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SCI4Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SCI5Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SFCortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SPI1Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SPI2Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\SPI3Cortex.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\startup_stm32f10x_hd.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_adc.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_bkp.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_can.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_cec.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_crc.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_dac.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_dbgmcu.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_dma.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_exti.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_flash.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_fsmc.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_gpio.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_i2c.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_it.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_iwdg.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_pwr.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_rcc.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_rtc.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_sdio.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_spi.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_tim.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_usart.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\stm32f10x_wwdg.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\system_stm32f10x.o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj\XIOCortex.o
+#        -o
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Exe\SoftGenSet.out
+#        --map
+#        E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\List\SoftGenSet.map
+#        --config D:\IAR8.22\arm\config\linker\ST\stm32f103xE.icf --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0807ffff] { ro };
+define block CSTACK with size = 4K, alignment = 8 { };
+define block HEAP with size = 4K, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x2000ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address     Size  Object
+  -------            ----        -------     ----  ------
+"A0":                                       0x130
+  .intvec            ro code  0x08000000    0x130  startup_stm32f10x_hd.o [1]
+                            - 0x08000130    0x130
+
+"P1":                                     0x14f30
+  .text              ro code  0x08000130   0x654c  SFCortex.o [1]
+  .text              ro code  0x0800667c   0x1c82  DBCortex.o [1]
+  .text              ro code  0x08008300     0xe2  FltAdd.o [4]
+  .text              ro code  0x080083e4     0xd8  FltMul.o [4]
+  .text              ro code  0x080084bc    0x272  I64DivMod.o [5]
+  .text              ro code  0x08008730    0x8e0  OSCortex.o [1]
+  CODE               ro code  0x08009010     0x94  ASMCortex.o [1]
+  .text              ro code  0x080090a4     0x80  FltSub.o [4]
+  .text              ro code  0x08009124      0x2  I64DivZer.o [5]
+  .text              ro code  0x08009128   0x351c  CTLCortex.o [1]
+  .text              ro code  0x0800c644    0x1b8  CAN2Cortex.o [1]
+  .text              ro code  0x0800c7fc   0x3338  XIOCortex.o [1]
+  .text              ro code  0x0800fb34    0x964  FWCortex.o [1]
+  .text              ro code  0x08010498    0x434  FFTCortex.o [1]
+  .text              ro code  0x080108cc     0x3c  stm32f10x_rcc.o [1]
+  .text              ro code  0x08010908    0x158  stm32f10x_gpio.o [1]
+  .text              ro code  0x08010a60    0x1a0  stm32f10x_adc.o [1]
+  .text              ro code  0x08010c00    0x12c  RTCCortex.o [1]
+  .text              ro code  0x08010d2c    0x734  CAN1Cortex.o [1]
+  .text              ro code  0x08011460    0x508  SCI2Cortex.o [1]
+  .text              ro code  0x08011968    0x748  SCI3Cortex.o [1]
+  .text              ro code  0x080120b0    0x534  SCI4Cortex.o [1]
+  .text              ro code  0x080125e4     0x10  LCDCortex.o [1]
+  .text              ro code  0x080125f4    0xa22  arm_cfft_f32.o [1]
+  .text              ro code  0x08013018     0x24  S32ToFlt.o [4]
+  .text              ro code  0x0801303c     0x1c  FltCmpEq.o [4]
+  .text              ro code  0x08013058     0xfc  FltDiv.o [4]
+  .text              ro code  0x08013154     0x2a  FltToS32.o [4]
+  .text              ro code  0x08013180    0x72c  SAEJ1939.o [1]
+  .text              ro code  0x080138ac    0x974  arm_cfft_radix8_f32.o [1]
+  .text              ro code  0x08014220     0x6a  arm_bitreversal2.o [1]
+  .text              ro code  0x0801428c     0x1c  U32ToFlt.o [4]
+  .text              ro code  0x080142a8     0x90  CCPCortex.o [1]
+  .rodata            const    0x08014338    0x200  arm_common_tables.o [1]
+  .text              ro code  0x08014538    0x158  system_stm32f10x.o [1]
+  .rodata            const    0x08014690    0x100  OSCortex.o [1]
+  .rodata            const    0x08014790    0x100  SFCortex.o [1]
+  .rodata            const    0x08014890    0x100  SFCortex.o [1]
+  .rodata            const    0x08014990     0x70  arm_common_tables.o [1]
+  .text              ro code  0x08014a00     0x40  zero_init3.o [5]
+  .text              ro code  0x08014a40     0x2c  copy_init3.o [5]
+  .text              ro code  0x08014a6c     0x28  data_init.o [5]
+  .iar.init_table    const    0x08014a94     0x24  - Linker created -
+  .text              ro code  0x08014ab8     0x1e  cmain.o [5]
+  .text              ro code  0x08014ad6      0x4  low_level_init.o [3]
+  .text              ro code  0x08014ada      0x4  exit.o [3]
+  .text              ro code  0x08014ae0      0xa  cexit.o [5]
+  .text              ro code  0x08014aec     0x14  exit.o [6]
+  .rodata            const    0x08014b00     0x14  SFCortex.o [1]
+  .rodata            const    0x08014b14     0x14  SFCortex.o [1]
+  .rodata            const    0x08014b28     0x14  SFCortex.o [1]
+  .rodata            const    0x08014b3c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014b50     0x14  SFCortex.o [1]
+  .rodata            const    0x08014b64     0x14  SFCortex.o [1]
+  .rodata            const    0x08014b78     0x14  SFCortex.o [1]
+  .rodata            const    0x08014b8c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014ba0     0x14  SFCortex.o [1]
+  .rodata            const    0x08014bb4     0x14  SFCortex.o [1]
+  .rodata            const    0x08014bc8     0x14  SFCortex.o [1]
+  .rodata            const    0x08014bdc     0x14  SFCortex.o [1]
+  .rodata            const    0x08014bf0     0x14  SFCortex.o [1]
+  .rodata            const    0x08014c04     0x14  SFCortex.o [1]
+  .rodata            const    0x08014c18     0x14  SFCortex.o [1]
+  .rodata            const    0x08014c2c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014c40     0x14  SFCortex.o [1]
+  .rodata            const    0x08014c54     0x14  SFCortex.o [1]
+  .rodata            const    0x08014c68     0x14  SFCortex.o [1]
+  .rodata            const    0x08014c7c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014c90     0x14  SFCortex.o [1]
+  .rodata            const    0x08014ca4     0x14  SFCortex.o [1]
+  .rodata            const    0x08014cb8     0x14  SFCortex.o [1]
+  .rodata            const    0x08014ccc     0x14  SFCortex.o [1]
+  .rodata            const    0x08014ce0     0x14  SFCortex.o [1]
+  .rodata            const    0x08014cf4     0x14  SFCortex.o [1]
+  .rodata            const    0x08014d08     0x14  SFCortex.o [1]
+  .rodata            const    0x08014d1c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014d30     0x14  SFCortex.o [1]
+  .rodata            const    0x08014d44     0x14  SFCortex.o [1]
+  .rodata            const    0x08014d58     0x14  SFCortex.o [1]
+  .rodata            const    0x08014d6c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014d80     0x14  SFCortex.o [1]
+  .rodata            const    0x08014d94     0x14  SFCortex.o [1]
+  .rodata            const    0x08014da8     0x14  SFCortex.o [1]
+  .rodata            const    0x08014dbc     0x14  SFCortex.o [1]
+  .rodata            const    0x08014dd0     0x14  SFCortex.o [1]
+  .rodata            const    0x08014de4     0x14  SFCortex.o [1]
+  .rodata            const    0x08014df8     0x14  SFCortex.o [1]
+  .rodata            const    0x08014e0c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014e20     0x14  SFCortex.o [1]
+  .rodata            const    0x08014e34     0x14  SFCortex.o [1]
+  .rodata            const    0x08014e48     0x14  SFCortex.o [1]
+  .rodata            const    0x08014e5c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014e70     0x14  SFCortex.o [1]
+  .rodata            const    0x08014e84     0x14  SFCortex.o [1]
+  .rodata            const    0x08014e98     0x14  SFCortex.o [1]
+  .rodata            const    0x08014eac     0x14  SFCortex.o [1]
+  .rodata            const    0x08014ec0     0x14  SFCortex.o [1]
+  .rodata            const    0x08014ed4     0x14  SFCortex.o [1]
+  .rodata            const    0x08014ee8     0x14  SFCortex.o [1]
+  .rodata            const    0x08014efc     0x14  SFCortex.o [1]
+  .rodata            const    0x08014f10     0x14  SFCortex.o [1]
+  .rodata            const    0x08014f24     0x14  SFCortex.o [1]
+  .rodata            const    0x08014f38     0x14  SFCortex.o [1]
+  .rodata            const    0x08014f4c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014f60     0x14  SFCortex.o [1]
+  .rodata            const    0x08014f74     0x14  SFCortex.o [1]
+  .rodata            const    0x08014f88     0x14  SFCortex.o [1]
+  .rodata            const    0x08014f9c     0x14  SFCortex.o [1]
+  .rodata            const    0x08014fb0     0x14  SFCortex.o [1]
+  .rodata            const    0x08014fc4     0x14  SFCortex.o [1]
+  .rodata            const    0x08014fd8     0x14  SFCortex.o [1]
+  .rodata            const    0x08014fec     0x14  SFCortex.o [1]
+  .rodata            const    0x08015000     0x10  FFTCortex.o [1]
+  .text              ro code  0x08015010     0x10  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08015020      0xc  stm32f10x_it.o [1]
+  .text              ro code  0x0801502c      0xc  cstartup_M.o [5]
+  Initializer bytes  const    0x08015038      0xc  <for P2-1>
+  .text              ro code  0x08015044      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08015048      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801504c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08015050      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08015054      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08015058      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801505c      0x4  startup_stm32f10x_hd.o [1]
+  .rodata            const    0x08015060      0x0  zero_init3.o [5]
+  .rodata            const    0x08015060      0x0  copy_init3.o [5]
+                            - 0x08015060  0x14f30
+
+"P2", part 1 of 3:                            0xc
+  P2-1                        0x20000000      0xa  <Init block>
+    .data            inited   0x20000000      0x4  FWCortex.o [1]
+    .data            inited   0x20000004      0x2  CTLCortex.o [1]
+    .data            inited   0x20000006      0x2  SFCortex.o [1]
+    .data            inited   0x20000008      0x2  SFCortex.o [1]
+                            - 0x2000000a      0xa
+
+"P2", part 2 of 3:                         0x6958
+  .bss               zero     0x2000000c    0x780  XIOCortex.o [1]
+  .bss               zero     0x2000078c    0x780  XIOCortex.o [1]
+  .bss               zero     0x20000f0c    0x400  FWCortex.o [1]
+  .bss               zero     0x2000130c    0x3f0  SCI4Cortex.o [1]
+  .bss               zero     0x200016fc    0x3e8  DBCortex.o [1]
+  .bss               zero     0x20001ae4    0x3c0  DBCortex.o [1]
+  .bss               zero     0x20001ea4    0x320  CAN2Cortex.o [1]
+  .bss               zero     0x200021c4    0x320  DBCortex.o [1]
+  .bss               zero     0x200024e4    0x300  XIOCortex.o [1]
+  .bss               zero     0x200027e4    0x300  XIOCortex.o [1]
+  .bss               zero     0x20002ae4    0x300  XIOCortex.o [1]
+  .bss               zero     0x20002de4    0x300  XIOCortex.o [1]
+  .bss               zero     0x200030e4    0x300  XIOCortex.o [1]
+  .bss               zero     0x200033e4    0x300  XIOCortex.o [1]
+  .bss               zero     0x200036e4    0x300  XIOCortex.o [1]
+  .bss               zero     0x200039e4    0x300  XIOCortex.o [1]
+  .bss               zero     0x20003ce4    0x300  XIOCortex.o [1]
+  .bss               zero     0x20003fe4    0x200  FFTCortex.o [1]
+  .bss               zero     0x200041e4    0x200  FWCortex.o [1]
+  .bss               zero     0x200043e4    0x200  FWCortex.o [1]
+  .bss               zero     0x200045e4    0x200  FWCortex.o [1]
+  .bss               zero     0x200047e4    0x200  FWCortex.o [1]
+  .bss               zero     0x200049e4    0x200  FWCortex.o [1]
+  .bss               zero     0x20004be4    0x200  FWCortex.o [1]
+  .bss               zero     0x20004de4    0x200  FWCortex.o [1]
+  .bss               zero     0x20004fe4    0x200  FWCortex.o [1]
+  .bss               zero     0x200051e4    0x200  FWCortex.o [1]
+  .bss               zero     0x200053e4    0x140  OSCortex.o [1]
+  .bss               zero     0x20005524    0x104  SCI3Cortex.o [1]
+  .bss               zero     0x20005628     0xf0  DBCortex.o [1]
+  .bss               zero     0x20005718     0xf0  SAEJ1939.o [1]
+  .bss               zero     0x20005808     0xe0  CAN1Cortex.o [1]
+  .bss               zero     0x200058e8     0xc8  FWCortex.o [1]
+  .bss               zero     0x200059b0     0xc0  OSCortex.o [1]
+  .bss               zero     0x20005a70     0x80  FFTCortex.o [1]
+  .bss               zero     0x20005af0     0x80  FFTCortex.o [1]
+  .bss               zero     0x20005b70     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005bf0     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005c70     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005cf0     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005d70     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005df0     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005e70     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005ef0     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005f70     0x80  XIOCortex.o [1]
+  .bss               zero     0x20005ff0     0x80  XIOCortex.o [1]
+  .bss               zero     0x20006070     0x80  XIOCortex.o [1]
+  .bss               zero     0x200060f0     0x80  XIOCortex.o [1]
+  .bss               zero     0x20006170     0x80  XIOCortex.o [1]
+  .bss               zero     0x200061f0     0x80  XIOCortex.o [1]
+  .bss               zero     0x20006270     0x80  XIOCortex.o [1]
+  .bss               zero     0x200062f0     0x80  XIOCortex.o [1]
+  .bss               zero     0x20006370     0x40  OSCortex.o [1]
+  .bss               zero     0x200063b0     0x30  DBCortex.o [1]
+  .bss               zero     0x200063e0     0x30  SCI2Cortex.o [1]
+  .bss               zero     0x20006410     0x2c  XIOCortex.o [1]
+  .bss               zero     0x2000643c     0x2c  XIOCortex.o [1]
+  .bss               zero     0x20006468     0x28  SCI4Cortex.o [1]
+  .bss               zero     0x20006490     0x20  XIOCortex.o [1]
+  .bss               zero     0x200064b0     0x20  XIOCortex.o [1]
+  .bss               zero     0x200064d0     0x20  XIOCortex.o [1]
+  .bss               zero     0x200064f0     0x20  XIOCortex.o [1]
+  .bss               zero     0x20006510     0x20  XIOCortex.o [1]
+  .bss               zero     0x20006530     0x20  XIOCortex.o [1]
+  .bss               zero     0x20006550     0x20  XIOCortex.o [1]
+  .bss               zero     0x20006570     0x20  XIOCortex.o [1]
+  .bss               zero     0x20006590     0x20  XIOCortex.o [1]
+  .bss               zero     0x200065b0     0x18  DBCortex.o [1]
+  .bss               zero     0x200065c8     0x18  SAEJ1939.o [1]
+  .bss               zero     0x200065e0     0x14  CTLCortex.o [1]
+  .bss               zero     0x200065f8     0x18  SFCortex.o [1]
+  .bss               zero     0x20006610     0x18  SFCortex.o [1]
+  .bss               zero     0x20006628     0x18  SFCortex.o [1]
+  .bss               zero     0x20006640     0x18  SFCortex.o [1]
+  .bss               zero     0x20006658     0x18  SFCortex.o [1]
+  .bss               zero     0x20006670     0x18  SFCortex.o [1]
+  .bss               zero     0x20006688     0x14  CTLCortex.o [1]
+  .bss               zero     0x2000669c     0x14  FFTCortex.o [1]
+  .bss               zero     0x200066b0     0x14  XIOCortex.o [1]
+  .bss               zero     0x200066c4     0x14  XIOCortex.o [1]
+  .bss               zero     0x200066d8      0xc  CAN1Cortex.o [1]
+  .bss               zero     0x200066e4      0xc  CAN1Cortex.o [1]
+  .bss               zero     0x200066f0      0xc  CAN1Cortex.o [1]
+  .bss               zero     0x200066fc      0xc  CAN1Cortex.o [1]
+  .bss               zero     0x20006708      0x8  CCPCortex.o [1]
+  .bss               zero     0x20006710      0x8  CCPCortex.o [1]
+  .bss               zero     0x20006718      0x8  CTLCortex.o [1]
+  .bss               zero     0x20006720      0x4  CAN1Cortex.o [1]
+  .bss               zero     0x20006724      0x4  CTLCortex.o [1]
+  .bss               zero     0x20006728      0x4  CTLCortex.o [1]
+  .bss               zero     0x2000672c      0x4  CTLCortex.o [1]
+  .bss               zero     0x20006730      0x4  DBCortex.o [1]
+  .bss               zero     0x20006734      0x4  FFTCortex.o [1]
+  .bss               zero     0x20006738      0x4  FWCortex.o [1]
+  .bss               zero     0x2000673c      0x4  FWCortex.o [1]
+  .bss               zero     0x20006740      0x4  LCDCortex.o [1]
+  .bss               zero     0x20006744      0x4  OSCortex.o [1]
+  .bss               zero     0x20006748      0x4  OSCortex.o [1]
+  .bss               zero     0x2000674c      0x4  OSCortex.o [1]
+  .bss               zero     0x20006750      0x4  OSCortex.o [1]
+  .bss               zero     0x20006754      0x4  OSCortex.o [1]
+  .bss               zero     0x20006758      0x4  OSCortex.o [1]
+  .bss               zero     0x2000675c      0x4  OSCortex.o [1]
+  .bss               zero     0x20006760      0x4  RTCCortex.o [1]
+  .bss               zero     0x20006764      0x4  SAEJ1939.o [1]
+  .bss               zero     0x20006768      0x4  SCI2Cortex.o [1]
+  .bss               zero     0x2000676c      0x4  SCI3Cortex.o [1]
+  .bss               zero     0x20006770      0x4  SCI3Cortex.o [1]
+  .bss               zero     0x20006774      0x4  SCI4Cortex.o [1]
+  .bss               zero     0x20006778      0x4  SFCortex.o [1]
+  .bss               zero     0x2000677c      0x4  SFCortex.o [1]
+  .bss               zero     0x20006780      0x4  SFCortex.o [1]
+  .bss               zero     0x20006784      0x4  SFCortex.o [1]
+  .bss               zero     0x20006788      0x4  SFCortex.o [1]
+  .bss               zero     0x2000678c      0x4  SFCortex.o [1]
+  .bss               zero     0x20006790      0x4  SFCortex.o [1]
+  .bss               zero     0x20006794      0x4  SFCortex.o [1]
+  .bss               zero     0x20006798      0x4  SFCortex.o [1]
+  .bss               zero     0x2000679c      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067a0      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067a4      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067a8      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067ac      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067b0      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067b4      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067b8      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067bc      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067c0      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067c4      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067c8      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067cc      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067d0      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067d4      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067d8      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067dc      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067e0      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067e4      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067e8      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067ec      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067f0      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067f4      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067f8      0x4  XIOCortex.o [1]
+  .bss               zero     0x200067fc      0x4  XIOCortex.o [1]
+  .bss               zero     0x20006800      0x4  XIOCortex.o [1]
+  .bss               zero     0x20006804      0x4  XIOCortex.o [1]
+  .bss               zero     0x20006808      0x4  XIOCortex.o [1]
+  .bss               zero     0x2000680c      0x4  XIOCortex.o [1]
+  .bss               zero     0x20006810      0x2  CTLCortex.o [1]
+  .bss               zero     0x20006812      0x2  CTLCortex.o [1]
+  .bss               zero     0x20006814      0x2  CTLCortex.o [1]
+  .bss               zero     0x20006816      0x2  CTLCortex.o [1]
+  .bss               zero     0x20006818      0x2  CTLCortex.o [1]
+  .bss               zero     0x2000681a      0x2  CTLCortex.o [1]
+  .bss               zero     0x2000681c      0x2  CTLCortex.o [1]
+  .bss               zero     0x2000681e      0x2  CTLCortex.o [1]
+  .bss               zero     0x20006820      0x2  FFTCortex.o [1]
+  .bss               zero     0x20006822      0x2  FWCortex.o [1]
+  .bss               zero     0x20006824      0x2  FWCortex.o [1]
+  .bss               zero     0x20006826      0x2  FWCortex.o [1]
+  .bss               zero     0x20006828      0x2  FWCortex.o [1]
+  .bss               zero     0x2000682a      0x2  FWCortex.o [1]
+  .bss               zero     0x2000682c      0x2  FWCortex.o [1]
+  .bss               zero     0x2000682e      0x2  FWCortex.o [1]
+  .bss               zero     0x20006830      0x2  FWCortex.o [1]
+  .bss               zero     0x20006832      0x2  FWCortex.o [1]
+  .bss               zero     0x20006834      0x2  FWCortex.o [1]
+  .bss               zero     0x20006836      0x2  FWCortex.o [1]
+  .bss               zero     0x20006838      0x2  FWCortex.o [1]
+  .bss               zero     0x2000683a      0x2  OSCortex.o [1]
+  .bss               zero     0x2000683c      0x2  OSCortex.o [1]
+  .bss               zero     0x2000683e      0x2  OSCortex.o [1]
+  .bss               zero     0x20006840      0x2  SCI3Cortex.o [1]
+  .bss               zero     0x20006842      0x2  SCI3Cortex.o [1]
+  .bss               zero     0x20006844      0x2  SCI3Cortex.o [1]
+  .bss               zero     0x20006846      0x2  SCI3Cortex.o [1]
+  .bss               zero     0x20006848      0x2  SCI3Cortex.o [1]
+  .bss               zero     0x2000684a      0x2  SFCortex.o [1]
+  .bss               zero     0x2000684c      0x2  SFCortex.o [1]
+  .bss               zero     0x2000684e      0x2  SFCortex.o [1]
+  .bss               zero     0x20006850      0x2  SFCortex.o [1]
+  .bss               zero     0x20006852      0x2  SFCortex.o [1]
+  .bss               zero     0x20006854      0x2  SFCortex.o [1]
+  .bss               zero     0x20006856      0x2  SFCortex.o [1]
+  .bss               zero     0x20006858      0x2  SFCortex.o [1]
+  .bss               zero     0x2000685a      0x2  SFCortex.o [1]
+  .bss               zero     0x2000685c      0x2  SFCortex.o [1]
+  .bss               zero     0x2000685e      0x2  SFCortex.o [1]
+  .bss               zero     0x20006860      0x2  SFCortex.o [1]
+  .bss               zero     0x20006862      0x2  SFCortex.o [1]
+  .bss               zero     0x20006864      0x2  SFCortex.o [1]
+  .bss               zero     0x20006866      0x2  SFCortex.o [1]
+  .bss               zero     0x20006868      0x2  SFCortex.o [1]
+  .bss               zero     0x2000686a      0x2  SFCortex.o [1]
+  .bss               zero     0x2000686c      0x2  SFCortex.o [1]
+  .bss               zero     0x2000686e      0x2  SFCortex.o [1]
+  .bss               zero     0x20006870      0x2  SFCortex.o [1]
+  .bss               zero     0x20006872      0x2  SFCortex.o [1]
+  .bss               zero     0x20006874      0x2  SFCortex.o [1]
+  .bss               zero     0x20006876      0x2  SFCortex.o [1]
+  .bss               zero     0x20006878      0x2  SFCortex.o [1]
+  .bss               zero     0x2000687a      0x2  SFCortex.o [1]
+  .bss               zero     0x2000687c      0x2  SFCortex.o [1]
+  .bss               zero     0x2000687e      0x2  SFCortex.o [1]
+  .bss               zero     0x20006880      0x2  SFCortex.o [1]
+  .bss               zero     0x20006882      0x2  SFCortex.o [1]
+  .bss               zero     0x20006884      0x2  SFCortex.o [1]
+  .bss               zero     0x20006886      0x2  SFCortex.o [1]
+  .bss               zero     0x20006888      0x2  SFCortex.o [1]
+  .bss               zero     0x2000688a      0x2  SFCortex.o [1]
+  .bss               zero     0x2000688c      0x2  SFCortex.o [1]
+  .bss               zero     0x2000688e      0x2  SFCortex.o [1]
+  .bss               zero     0x20006890      0x2  SFCortex.o [1]
+  .bss               zero     0x20006892      0x2  SFCortex.o [1]
+  .bss               zero     0x20006894      0x2  SFCortex.o [1]
+  .bss               zero     0x20006896      0x2  SFCortex.o [1]
+  .bss               zero     0x20006898      0x2  SFCortex.o [1]
+  .bss               zero     0x2000689a      0x2  SFCortex.o [1]
+  .bss               zero     0x2000689c      0x2  SFCortex.o [1]
+  .bss               zero     0x2000689e      0x2  SFCortex.o [1]
+  .bss               zero     0x200068a0      0x2  SFCortex.o [1]
+  .bss               zero     0x200068a2      0x2  SFCortex.o [1]
+  .bss               zero     0x200068a4      0x2  SFCortex.o [1]
+  .bss               zero     0x200068a6      0x2  SFCortex.o [1]
+  .bss               zero     0x200068a8      0x2  SFCortex.o [1]
+  .bss               zero     0x200068aa      0x2  SFCortex.o [1]
+  .bss               zero     0x200068ac      0x2  SFCortex.o [1]
+  .bss               zero     0x200068ae      0x2  SFCortex.o [1]
+  .bss               zero     0x200068b0      0x2  SFCortex.o [1]
+  .bss               zero     0x200068b2      0x2  SFCortex.o [1]
+  .bss               zero     0x200068b4      0x2  SFCortex.o [1]
+  .bss               zero     0x200068b6      0x2  SFCortex.o [1]
+  .bss               zero     0x200068b8      0x2  SFCortex.o [1]
+  .bss               zero     0x200068ba      0x2  SFCortex.o [1]
+  .bss               zero     0x200068bc      0x2  SFCortex.o [1]
+  .bss               zero     0x200068be      0x2  SFCortex.o [1]
+  .bss               zero     0x200068c0      0x2  SFCortex.o [1]
+  .bss               zero     0x200068c2      0x2  SFCortex.o [1]
+  .bss               zero     0x200068c4      0x2  SFCortex.o [1]
+  .bss               zero     0x200068c6      0x2  SFCortex.o [1]
+  .bss               zero     0x200068c8      0x2  SFCortex.o [1]
+  .bss               zero     0x200068ca      0x2  SFCortex.o [1]
+  .bss               zero     0x200068cc      0x2  SFCortex.o [1]
+  .bss               zero     0x200068ce      0x2  SFCortex.o [1]
+  .bss               zero     0x200068d0      0x2  SFCortex.o [1]
+  .bss               zero     0x200068d2      0x2  SFCortex.o [1]
+  .bss               zero     0x200068d4      0x2  SFCortex.o [1]
+  .bss               zero     0x200068d6      0x2  SFCortex.o [1]
+  .bss               zero     0x200068d8      0x2  SFCortex.o [1]
+  .bss               zero     0x200068da      0x2  SFCortex.o [1]
+  .bss               zero     0x200068dc      0x2  SFCortex.o [1]
+  .bss               zero     0x200068de      0x2  SFCortex.o [1]
+  .bss               zero     0x200068e0      0x2  SFCortex.o [1]
+  .bss               zero     0x200068e2      0x2  SFCortex.o [1]
+  .bss               zero     0x200068e4      0x2  SFCortex.o [1]
+  .bss               zero     0x200068e6      0x2  SFCortex.o [1]
+  .bss               zero     0x200068e8      0x2  SFCortex.o [1]
+  .bss               zero     0x200068ea      0x2  SFCortex.o [1]
+  .bss               zero     0x200068ec      0x2  SFCortex.o [1]
+  .bss               zero     0x200068ee      0x2  SFCortex.o [1]
+  .bss               zero     0x200068f0      0x2  SFCortex.o [1]
+  .bss               zero     0x200068f2      0x2  SFCortex.o [1]
+  .bss               zero     0x200068f4      0x2  SFCortex.o [1]
+  .bss               zero     0x200068f6      0x2  SFCortex.o [1]
+  .bss               zero     0x200068f8      0x2  SFCortex.o [1]
+  .bss               zero     0x200068fa      0x2  SFCortex.o [1]
+  .bss               zero     0x200068fc      0x2  XIOCortex.o [1]
+  .bss               zero     0x200068fe      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006900      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006902      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006904      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006906      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006908      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000690a      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000690c      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000690e      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006910      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006912      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006914      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006916      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006918      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000691a      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000691c      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000691e      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006920      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006922      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006924      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006926      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006928      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000692a      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000692c      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000692e      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006930      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006932      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006934      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006936      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006938      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000693a      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000693c      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000693e      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006940      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006942      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006944      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006946      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006948      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000694a      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000694c      0x2  XIOCortex.o [1]
+  .bss               zero     0x2000694e      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006950      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006952      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006954      0x2  XIOCortex.o [1]
+  .bss               zero     0x20006956      0x1  CAN2Cortex.o [1]
+  .bss               zero     0x20006957      0x1  CAN2Cortex.o [1]
+  .bss               zero     0x20006958      0x1  CAN2Cortex.o [1]
+  .bss               zero     0x20006959      0x1  CAN2Cortex.o [1]
+  .bss               zero     0x2000695a      0x1  CAN2Cortex.o [1]
+  .bss               zero     0x2000695b      0x1  OSCortex.o [1]
+  .bss               zero     0x2000695c      0x1  OSCortex.o [1]
+  .bss               zero     0x2000695d      0x1  OSCortex.o [1]
+  .bss               zero     0x2000695e      0x1  OSCortex.o [1]
+  .bss               zero     0x2000695f      0x1  SAEJ1939.o [1]
+  .bss               zero     0x20006960      0x1  SCI3Cortex.o [1]
+  .bss               zero     0x20006961      0x1  SCI3Cortex.o [1]
+  .bss               zero     0x20006962      0x1  SCI3Cortex.o [1]
+                            - 0x20006963   0x6957
+
+"P2", part 3 of 3:                         0x1000
+  CSTACK                      0x20006968   0x1000  <Block>
+    CSTACK           uninit   0x20006968   0x1000  <Block tail>
+                            - 0x20007968   0x1000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x6957:
+          0x2000000c  0x6957
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0xc (120% of destination):
+          0x08015038     0xc
+    1 destination range, total size 0xa:
+          0x20000000     0xa
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj: [1]
+    ASMCortex.o                 148
+    CAN1Cortex.o              1 844               276
+    CAN2Cortex.o                440               805
+    CCPCortex.o                 144                16
+    CTLCortex.o              13 596        2       78
+    DBCortex.o                7 298             3 076
+    FFTCortex.o               1 076       16      794
+    FWCortex.o                2 404        4    5 868
+    LCDCortex.o                  16                 4
+    OSCortex.o                2 272      256      614
+    RTCCortex.o                 300                 4
+    SAEJ1939.o                1 836               269
+    SCI2Cortex.o              1 288                52
+    SCI3Cortex.o              1 864               281
+    SCI4Cortex.o              1 332             1 052
+    SFCortex.o               25 932    1 796      362
+    XIOCortex.o              13 112            13 422
+    arm_bitreversal2.o          106
+    arm_cfft_f32.o            2 594
+    arm_cfft_radix8_f32.o     2 420
+    arm_common_tables.o                  624
+    startup_stm32f10x_hd.o      348
+    stm32f10x_adc.o             416
+    stm32f10x_gpio.o            344
+    stm32f10x_it.o               12
+    stm32f10x_rcc.o              60
+    system_stm32f10x.o          344
+    -------------------------------------------------
+    Total:                   81 546    2 698   26 973
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+m7M_tl.a: [4]
+    FltAdd.o                    226
+    FltCmpEq.o                   28
+    FltDiv.o                    252
+    FltMul.o                    216
+    FltSub.o                    128
+    FltToS32.o                   42
+    S32ToFlt.o                   36
+    U32ToFlt.o                   28
+    -------------------------------------------------
+    Total:                      956
+
+rt7M_tl.a: [5]
+    I64DivMod.o                 626
+    I64DivZer.o                   2
+    cexit.o                      10
+    cmain.o                      30
+    copy_init3.o                 44
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 64
+    -------------------------------------------------
+    Total:                      828
+
+shb_l.a: [6]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         18                 4
+    Linker created                        38    4 096
+-----------------------------------------------------
+    Grand Total:             83 376    2 736   31 073
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x08014a94           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08014ab8           --   Gb  - Linker created -
+?main                   0x08014ab9          Code  Gb  cmain.o [5]
+ADC1_2_IRQHandler       0x08010073    0x12  Code  Gb  FWCortex.o [1]
+ADC3_IRQHandler         0x08010085    0x12  Code  Gb  FWCortex.o [1]
+ADC_Cmd                 0x08010aab    0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetCalibrationStatus
+                        0x08010aeb    0x12  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetConversionValue  0x08010bdd     0x6  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetFlagStatus       0x08010bed    0x14  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetResetCalibrationStatus
+                        0x08010acf    0x12  Code  Gb  stm32f10x_adc.o [1]
+ADC_Init                0x08010a61    0x4a  Code  Gb  stm32f10x_adc.o [1]
+ADC_RegularChannelConfig
+                        0x08010b17    0xc6  Code  Gb  stm32f10x_adc.o [1]
+ADC_ResetCalibration    0x08010ac5     0xa  Code  Gb  stm32f10x_adc.o [1]
+ADC_SoftwareStartConvCmd
+                        0x08010afd    0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_StartCalibration    0x08010ae1     0xa  Code  Gb  stm32f10x_adc.o [1]
+BusFault_Handler        0x08015027     0x2  Code  Gb  stm32f10x_it.o [1]
+CAN1BufInit             0x08011165    0x38  Code  Gb  CAN1Cortex.o [1]
+CAN1GetMsgFmRxBuf       0x08011241    0x64  Code  Gb  CAN1Cortex.o [1]
+CAN1GetTxMsgFmBuf       0x080111f9    0x48  Code  Gb  CAN1Cortex.o [1]
+CAN1HardInit            0x08011313    0xb0  Code  Gb  CAN1Cortex.o [1]
+CAN1Init                0x08010d2d    0x18  Code  Gb  CAN1Cortex.o [1]
+CAN1IsRxBufEmpty        0x0801119d    0x20  Code  Gb  CAN1Cortex.o [1]
+CAN1PutMsgToTxBuf       0x080112a5    0x6e  Code  Gb  CAN1Cortex.o [1]
+CAN1PutRxMsgToBuf       0x080111bd    0x3c  Code  Gb  CAN1Cortex.o [1]
+CAN1Rx0IntHook          0x08010f4b    0xdc  Code  Gb  CAN1Cortex.o [1]
+CAN1Rx1IntHook          0x08011027    0xdc  Code  Gb  CAN1Cortex.o [1]
+CAN1SceIntHook          0x08011103    0x62  Code  Gb  CAN1Cortex.o [1]
+CAN1Start               0x08010d45    0x34  Code  Gb  CAN1Cortex.o [1]
+CAN1TaskLoop            0x08010d79    0x8c  Code  Gb  CAN1Cortex.o [1]
+CAN1TxIntHook           0x08010e05   0x146  Code  Gb  CAN1Cortex.o [1]
+CAN1_RX1_IRQHandler     0x080101e1    0x10  Code  Gb  FWCortex.o [1]
+CAN1_SCE_IRQHandler     0x080101f1    0x10  Code  Gb  FWCortex.o [1]
+CAN2GetCanSchedIsAlone  0x0800c777    0x44  Code  Gb  CAN2Cortex.o [1]
+CAN2GetCanSchedIsHighest
+                        0x0800c7bb    0x24  Code  Gb  CAN2Cortex.o [1]
+CAN2GetCanSchedToStop   0x0800c645   0x10e  Code  Gb  CAN2Cortex.o [1]
+CAN2GetCanSchedToSwitch
+                        0x0800c753    0x24  Code  Gb  CAN2Cortex.o [1]
+CCP10DecodeRxPar        0x080142e3    0x4e  Code  Gb  CCPCortex.o [1]
+CCP10FillMsgTxReq       0x080142a9    0x3a  Code  Gb  CCPCortex.o [1]
+CSTACK$$Base            0x20006968           --   Gb  - Linker created -
+CSTACK$$Limit           0x20007968           --   Gb  - Linker created -
+CTLAvrTuner             0x200065e0    0x14  Data  Gb  CTLCortex.o [1]
+CTLCheckGensReadyToLoad
+                        0x0800980b    0x16  Code  Gb  CTLCortex.o [1]
+CTLCheckIsGensWorking   0x080098e7    0x7e  Code  Gb  CTLCortex.o [1]
+CTLCheckIsMainVoltLost  0x08009965    0x14  Code  Gb  CTLCortex.o [1]
+CTLCheckMainReadyToSync
+                        0x08009821    0x16  Code  Gb  CTLCortex.o [1]
+CTLCheckSyncCondition   0x08009837    0xb0  Code  Gb  CTLCortex.o [1]
+CTLGetAmfCmdToStop      0x08009e35    0x3a  Code  Gb  CTLCortex.o [1]
+CTLGetAmfGensSwOnCndt   0x08009f13     0xa  Code  Gb  CTLCortex.o [1]
+CTLGetAmfMainSwOnCndt   0x08009f8d    0x1c  Code  Gb  CTLCortex.o [1]
+CTLGetAmfPidMode        0x0800a093   0x154  Code  Gb  CTLCortex.o [1]
+CTLGetAmfSysPhase       0x0800aea1   0x628  Code  Gb  CTLCortex.o [1]
+CTLGetAmfSysPhase::usAmfTime
+                        0x20006818     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetAvrControl        0x08009b2f   0x13e  Code  Gb  CTLCortex.o [1]
+CTLGetAvrControl::usAvrCtrl
+                        0x20006814     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetCommonCmdToSwOn   0x080097f7    0x14  Code  Gb  CTLCortex.o [1]
+CTLGetCommonErrToStop   0x08009739    0x58  Code  Gb  CTLCortex.o [1]
+CTLGetCommonErrToWarn   0x08009791    0x66  Code  Gb  CTLCortex.o [1]
+CTLGetEmergnErrToStop   0x08009713    0x26  Code  Gb  CTLCortex.o [1]
+CTLGetFixPwrCmdToStop   0x08009ea1    0x2e  Code  Gb  CTLCortex.o [1]
+CTLGetFixPwrGensSwOnCndt
+                        0x08009f3d    0x1c  Code  Gb  CTLCortex.o [1]
+CTLGetFixPwrMainSwOnCndt
+                        0x08009fc5    0x1c  Code  Gb  CTLCortex.o [1]
+CTLGetFixPwrPidMode     0x0800a461   0x28c  Code  Gb  CTLCortex.o [1]
+CTLGetFixPwrSysPhase    0x0800b4d9   0x514  Code  Gb  CTLCortex.o [1]
+CTLGetFixPwrSysPhase::usFixPwrTime
+                        0x2000681a     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetGensSwCtrl        0x080099b1    0x30  Code  Gb  CTLCortex.o [1]
+CTLGetGensSwCtrl::usSwCtrl
+                        0x20006810     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetGovControl        0x080099e1   0x14e  Code  Gb  CTLCortex.o [1]
+CTLGetGovControl::usGovCtrl
+                        0x20006812     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetIslandCmdToStop   0x08009e6f    0x2e  Code  Gb  CTLCortex.o [1]
+CTLGetIslandGensSwOnCndt
+                        0x08009f1d    0x20  Code  Gb  CTLCortex.o [1]
+CTLGetIslandMainSwOnCndt
+                        0x08009fa9    0x1c  Code  Gb  CTLCortex.o [1]
+CTLGetIslandPidMode     0x0800a1f5   0x254  Code  Gb  CTLCortex.o [1]
+CTLGetIslandSysPhase    0x0800ba09   0x6e4  Code  Gb  CTLCortex.o [1]
+CTLGetIslandSysPhase::usIslandTime
+                        0x2000681c     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetLoadRampStepAct   0x08009c6d    0x26  Code  Gb  CTLCortex.o [1]
+CTLGetLoadRampStepAct::uiLoadActResi
+                        0x20006728     0x4  Data  Lc  CTLCortex.o [1]
+CTLGetLoadRampStepRct   0x08009d35    0x26  Code  Gb  CTLCortex.o [1]
+CTLGetLoadRampStepRct::uiLoadRctResi
+                        0x2000672c     0x4  Data  Lc  CTLCortex.o [1]
+CTLGetLoadSetpRampAct   0x08009c93    0xa2  Code  Gb  CTLCortex.o [1]
+CTLGetLoadSetpRampRct   0x08009d5b    0xa2  Code  Gb  CTLCortex.o [1]
+CTLGetMainSwCtrl        0x08009979    0x38  Code  Gb  CTLCortex.o [1]
+CTLGetMainSwCtrl::usSwCtrl
+                        0x20000004     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetParallCmdToStop   0x08009ecf    0x3a  Code  Gb  CTLCortex.o [1]
+CTLGetParallGensSwOnCndt
+                        0x08009f59    0x30  Code  Gb  CTLCortex.o [1]
+CTLGetParallMainSwOnCndt
+                        0x08009fe5     0x4  Code  Gb  CTLCortex.o [1]
+CTLGetParallPidMode     0x0800a6fd   0x2a4  Code  Gb  CTLCortex.o [1]
+CTLGetParallSysPhase    0x0800c101   0x52e  Code  Gb  CTLCortex.o [1]
+CTLGetParallSysPhase::usParallTime
+                        0x2000681e     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetSingleCmdToStop   0x08009e01    0x2e  Code  Gb  CTLCortex.o [1]
+CTLGetSingleGensSwOnCndt
+                        0x08009f09     0xa  Code  Gb  CTLCortex.o [1]
+CTLGetSingleMainSwOnCndt
+                        0x08009f89     0x4  Code  Gb  CTLCortex.o [1]
+CTLGetSinglePidMode     0x08009fe9    0xaa  Code  Gb  CTLCortex.o [1]
+CTLGetSingleSysPhase    0x0800a9a1   0x4f8  Code  Gb  CTLCortex.o [1]
+CTLGetSingleSysPhase::usSingleTime
+                        0x20006816     0x2  Data  Lc  CTLCortex.o [1]
+CTLGetSysAutoOrManual   0x080096ff    0x14  Code  Gb  CTLCortex.o [1]
+CTLGovTuner             0x20006688    0x14  Data  Gb  CTLCortex.o [1]
+CTLInit                 0x08009129    0x30  Code  Gb  CTLCortex.o [1]
+CTLSysController        0x080092bf   0x440  Code  Gb  CTLCortex.o [1]
+CTLSysMonitor           0x08009159   0x166  Code  Gb  CTLCortex.o [1]
+DBCheckCurve            0x08007815    0x68  Code  Gb  DBCortex.o [1]
+DBCheckCurve16p         0x080082cf    0x30  Code  Gb  DBCortex.o [1]
+DBCheckFunct            0x080077a7    0x58  Code  Gb  DBCortex.o [1]
+DBCheckFunct16p         0x0800813b    0x30  Code  Gb  DBCortex.o [1]
+DBCheckHstry            0x0800788f    0x4c  Code  Gb  DBCortex.o [1]
+DBCheckMeasu16p         0x08007ff9    0x30  Code  Gb  DBCortex.o [1]
+DBCheckParam            0x080068a9    0xa0  Code  Gb  DBCortex.o [1]
+DBCheckParam16p         0x08007ead    0x30  Code  Gb  DBCortex.o [1]
+DBCmdBufInit            0x08007cdb    0x20  Code  Gb  DBCortex.o [1]
+DBEepCheckRecord        0x08007a29    0xb6  Code  Gb  DBCortex.o [1]
+DBEepInitHstryBlock     0x08007983    0xa6  Code  Gb  DBCortex.o [1]
+DBEepReadParam          0x080078fd    0x38  Code  Gb  DBCortex.o [1]
+DBEepReadRecord         0x08007adf    0x26  Code  Gb  DBCortex.o [1]
+DBEepWriteParam         0x08007935    0x4e  Code  Gb  DBCortex.o [1]
+DBEepWriteRecord        0x08007b05    0x7c  Code  Gb  DBCortex.o [1]
+DBFlashErasePage        0x08007bd5    0x50  Code  Gb  DBCortex.o [1]
+DBFlashRead16p          0x08007cc3    0x18  Code  Gb  DBCortex.o [1]
+DBFlashRead16u          0x08007cbb     0x4  Code  Gb  DBCortex.o [1]
+DBFlashRead32u          0x08007cbf     0x4  Code  Gb  DBCortex.o [1]
+DBFlashWrite16p         0x08007c8f    0x2c  Code  Gb  DBCortex.o [1]
+DBFlashWrite16u         0x08007c25    0x42  Code  Gb  DBCortex.o [1]
+DBFlashWrite32u         0x08007c67    0x28  Code  Gb  DBCortex.o [1]
+DBGetBank1Status        0x08007b97    0x22  Code  Gb  DBCortex.o [1]
+DBGetCurve08p           0x080081bb    0x42  Code  Gb  DBCortex.o [1]
+DBGetCurve16p           0x08008183    0x38  Code  Gb  DBCortex.o [1]
+DBGetCurve16u           0x0800816b    0x18  Code  Gb  DBCortex.o [1]
+DBGetFunct08p           0x08008075    0x40  Code  Gb  DBCortex.o [1]
+DBGetFunct16p           0x0800803f    0x36  Code  Gb  DBCortex.o [1]
+DBGetFunct16u           0x08008029    0x16  Code  Gb  DBCortex.o [1]
+DBGetMeasu08p           0x08007f2f    0x42  Code  Gb  DBCortex.o [1]
+DBGetMeasu16p           0x08007ef7    0x38  Code  Gb  DBCortex.o [1]
+DBGetMeasu16u           0x08007edd    0x1a  Code  Gb  DBCortex.o [1]
+DBGetParam08p           0x08007de1    0x42  Code  Gb  DBCortex.o [1]
+DBGetParam16p           0x08007da9    0x38  Code  Gb  DBCortex.o [1]
+DBGetParam16u           0x08007d8f    0x1a  Code  Gb  DBCortex.o [1]
+DBInit                  0x0800667d   0x152  Code  Gb  DBCortex.o [1]
+DBInitDFlash            0x08007b81    0x16  Code  Gb  DBCortex.o [1]
+DBResetCurve            0x0800787d    0x12  Code  Gb  DBCortex.o [1]
+DBResetFunct            0x080077ff    0x10  Code  Gb  DBCortex.o [1]
+DBResetHstry            0x080078db    0x10  Code  Gb  DBCortex.o [1]
+DBResetMeasu            0x080078eb    0x12  Code  Gb  DBCortex.o [1]
+DBResetParam            0x08006971   0xe36  Code  Gb  DBCortex.o [1]
+DBSetCurve08p           0x08008291    0x3e  Code  Gb  DBCortex.o [1]
+DBSetCurve16p           0x08008261    0x30  Code  Gb  DBCortex.o [1]
+DBSetCurve16u           0x080081fd    0x1a  Code  Gb  DBCortex.o [1]
+DBSetFunct08p           0x080080fd    0x3e  Code  Gb  DBCortex.o [1]
+DBSetFunct16p           0x080080cd    0x30  Code  Gb  DBCortex.o [1]
+DBSetFunct16u           0x080080b5    0x18  Code  Gb  DBCortex.o [1]
+DBSetMeasu08p           0x08007fbb    0x3e  Code  Gb  DBCortex.o [1]
+DBSetMeasu16p           0x08007f8b    0x30  Code  Gb  DBCortex.o [1]
+DBSetMeasu16u           0x08007f71    0x1a  Code  Gb  DBCortex.o [1]
+DBSetParam08p           0x08007e6f    0x3e  Code  Gb  DBCortex.o [1]
+DBSetParam16p           0x08007e3f    0x30  Code  Gb  DBCortex.o [1]
+DBSetParam16u           0x08007e23    0x1c  Code  Gb  DBCortex.o [1]
+DBStart                 0x080067cf     0x2  Code  Gb  DBCortex.o [1]
+DBTaskLoop              0x080067d1    0xd8  Code  Gb  DBCortex.o [1]
+DBTskGetCmd             0x08007cfb    0x56  Code  Gb  DBCortex.o [1]
+DBTskPutCmd             0x08007d51    0x3e  Code  Gb  DBCortex.o [1]
+DBWaitBank1Complete     0x08007bb9    0x1c  Code  Gb  DBCortex.o [1]
+DMA1_Channel1_IRQHandler
+                        0x0801011d    0x10  Code  Gb  FWCortex.o [1]
+DMA1_Channel2_IRQHandler
+                        0x0801012d    0x10  Code  Gb  FWCortex.o [1]
+DMA1_Channel3_IRQHandler
+                        0x0801013d    0x10  Code  Gb  FWCortex.o [1]
+DMA1_Channel4_IRQHandler
+                        0x0801014d     0xc  Code  Gb  FWCortex.o [1]
+DMA1_Channel5_IRQHandler
+                        0x08010159     0xc  Code  Gb  FWCortex.o [1]
+DMA1_Channel6_IRQHandler
+                        0x08010165    0x10  Code  Gb  FWCortex.o [1]
+DMA1_Channel7_IRQHandler
+                        0x08010175    0x10  Code  Gb  FWCortex.o [1]
+DMA2_Channel1_IRQHandler
+                        0x08010185     0xe  Code  Gb  FWCortex.o [1]
+DMA2_Channel2_IRQHandler
+                        0x08010193     0xe  Code  Gb  FWCortex.o [1]
+DMA2_Channel3_IRQHandler
+                        0x080101a1    0x10  Code  Gb  FWCortex.o [1]
+DMA2_Channel4_5_IRQHandler
+                        0x080101b1    0x10  Code  Gb  FWCortex.o [1]
+DebugMon_Handler        0x0801502b     0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI0_IRQHandler        0x080100bb     0xe  Code  Gb  FWCortex.o [1]
+EXTI15_10_IRQHandler    0x0801010f     0xe  Code  Gb  FWCortex.o [1]
+EXTI1_IRQHandler        0x080100c9     0xe  Code  Gb  FWCortex.o [1]
+EXTI2_IRQHandler        0x080100d7     0xe  Code  Gb  FWCortex.o [1]
+EXTI3_IRQHandler        0x080100e5     0xe  Code  Gb  FWCortex.o [1]
+EXTI4_IRQHandler        0x080100f3     0xe  Code  Gb  FWCortex.o [1]
+EXTI9_5_IRQHandler      0x08010101     0xe  Code  Gb  FWCortex.o [1]
+FFTCmdBufInit           0x080107e5    0x1e  Code  Gb  FFTCortex.o [1]
+FFTCopy16sToCmplx       0x0801055d    0xec  Code  Gb  FFTCortex.o [1]
+FFTDistortion16u        0x080107b3    0x32  Code  Gb  FFTCortex.o [1]
+FFTGetCmdChar           0x08010833    0x66  Code  Gb  FFTCortex.o [1]
+FFTInit                 0x08010499    0x1c  Code  Gb  FFTCortex.o [1]
+FFTPutCmdChar           0x08010803    0x30  Code  Gb  FFTCortex.o [1]
+FFTStart                0x080104b5     0x2  Code  Gb  FFTCortex.o [1]
+FFTTaskLoop             0x080104b7    0xa6  Code  Gb  FFTCortex.o [1]
+FFTUpdateFilter         0x08010717    0x9c  Code  Gb  FFTCortex.o [1]
+FFTUpdateSpectrum       0x08010649    0xce  Code  Gb  FFTCortex.o [1]
+FLASH_IRQHandler        0x0801004f    0x12  Code  Gb  FWCortex.o [1]
+FSMC_IRQHandler         0x08010097    0x12  Code  Gb  FWCortex.o [1]
+FWCan1Task              0x0800fcb7    0x24  Code  Gb  FWCortex.o [1]
+FWCan1TaskStk           0x200043e4   0x200  Data  Gb  FWCortex.o [1]
+FWDbTask                0x0800fd47    0x26  Code  Gb  FWCortex.o [1]
+FWDbTaskStk             0x20004be4   0x200  Data  Gb  FWCortex.o [1]
+FWFftTask               0x0800fd6d    0x26  Code  Gb  FWCortex.o [1]
+FWFftTaskStk            0x20000f0c   0x400  Data  Gb  FWCortex.o [1]
+FWInit                  0x0800fb93    0x72  Code  Gb  FWCortex.o [1]
+FWInitClkHSE            0x0800fc07     0x2  Code  Gb  FWCortex.o [1]
+FWInitFLASH             0x0800fc0b     0x2  Code  Gb  FWCortex.o [1]
+FWInitPMC               0x0800fc09     0x2  Code  Gb  FWCortex.o [1]
+FWInitRCC               0x0800fc05     0x2  Code  Gb  FWCortex.o [1]
+FWIrqEnable             0x0800fc0d    0x20  Code  Gb  FWCortex.o [1]
+FWLcdTask               0x0800fd93    0x2c  Code  Gb  FWCortex.o [1]
+FWLcdTaskStk            0x200051e4   0x200  Data  Gb  FWCortex.o [1]
+FWSci2Task              0x0800fcdb    0x24  Code  Gb  FWCortex.o [1]
+FWSci2TaskStk           0x200045e4   0x200  Data  Gb  FWCortex.o [1]
+FWSci3Task              0x0800fcff    0x24  Code  Gb  FWCortex.o [1]
+FWSci3TaskStk           0x200047e4   0x200  Data  Gb  FWCortex.o [1]
+FWSci4Task              0x0800fd23    0x24  Code  Gb  FWCortex.o [1]
+FWSci4TaskStk           0x200049e4   0x200  Data  Gb  FWCortex.o [1]
+FWTimerHook             0x0800fc2d    0x3e  Code  Gb  FWCortex.o [1]
+FWTimerHook::uiCount    0x20000000     0x4  Data  Lc  FWCortex.o [1]
+FWWaitTaskSynchro       0x0800fc6b    0x28  Code  Gb  FWCortex.o [1]
+FWXioTask               0x0800fc93    0x24  Code  Gb  FWCortex.o [1]
+FWXioTaskStk            0x200041e4   0x200  Data  Gb  FWCortex.o [1]
+GPIO_Init               0x08010909    0xc4  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_PinRemapConfig     0x080109cd    0x8a  Code  Gb  stm32f10x_gpio.o [1]
+HardFault_Handler       0x08015023     0x2  Code  Gb  stm32f10x_it.o [1]
+I2C1_ER_IRQHandler      0x08010337     0xe  Code  Gb  FWCortex.o [1]
+I2C1_EV_IRQHandler      0x08010329     0xe  Code  Gb  FWCortex.o [1]
+I2C2_ER_IRQHandler      0x08010353     0xe  Code  Gb  FWCortex.o [1]
+I2C2_EV_IRQHandler      0x08010345     0xe  Code  Gb  FWCortex.o [1]
+LCDInit                 0x080125e5     0x8  Code  Gb  LCDCortex.o [1]
+LCDStart                0x080125f1     0x2  Code  Gb  LCDCortex.o [1]
+LCDTaskLoop             0x080125f3     0x2  Code  Gb  LCDCortex.o [1]
+MemManage_Handler       0x08015025     0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler             0x08015021     0x2  Code  Gb  stm32f10x_it.o [1]
+NumTemp                 0x200058e8    0xc8  Data  Gb  FWCortex.o [1]
+OSCheckStack            0x08008d23    0x32  Code  Gb  OSCortex.o [1]
+OSCtxSw                 0x0800901f          Code  Gb  ASMCortex.o [1]
+OSIdleTaskStk           0x20004fe4   0x200  Data  Gb  FWCortex.o [1]
+OSInit                  0x08008731   0x1a4  Code  Gb  OSCortex.o [1]
+OSInitTimer             0x08008f89    0x1a  Code  Gb  OSCortex.o [1]
+OSIntCtxSw              0x08009027          Code  Gb  ASMCortex.o [1]
+OSIntEnter              0x0800894b    0x1a  Code  Gb  OSCortex.o [1]
+OSIntExit               0x08008965    0x8e  Code  Gb  OSCortex.o [1]
+OSIntSemPost            0x08008efb    0x8e  Code  Gb  OSCortex.o [1]
+OSIntTaskResume         0x08008c7b    0x6e  Code  Gb  OSCortex.o [1]
+OSSched                 0x080088d5    0x76  Code  Gb  OSCortex.o [1]
+OSSemCreate             0x08008d55    0x36  Code  Gb  OSCortex.o [1]
+OSSemPend               0x08008d8b    0xde  Code  Gb  OSCortex.o [1]
+OSSemPost               0x08008e69    0x92  Code  Gb  OSCortex.o [1]
+OSStart                 0x080089f3    0x7a  Code  Gb  OSCortex.o [1]
+OSStartHighRdy          0x0800902f          Code  Gb  ASMCortex.o [1]
+OSStatInit              0x08008a6d    0x24  Code  Gb  OSCortex.o [1]
+OSStatTaskStk           0x20004de4   0x200  Data  Gb  FWCortex.o [1]
+OSTaskCreate            0x08008aef   0x104  Code  Gb  OSCortex.o [1]
+OSTaskIdle              0x08008a91    0x10  Code  Gb  OSCortex.o [1]
+OSTaskStat              0x0800fdbf   0x222  Code  Gb  FWCortex.o [1]
+OSTaskSuspend           0x08008bf3    0x88  Code  Gb  OSCortex.o [1]
+OSTimeDly               0x08008ce9    0x3a  Code  Gb  OSCortex.o [1]
+OSTimeTick              0x08008aa1    0x4e  Code  Gb  OSCortex.o [1]
+OS_CPU_SR_Restore       0x08009019          Code  Gb  ASMCortex.o [1]
+OS_CPU_SR_Save          0x08009011          Code  Gb  ASMCortex.o [1]
+PVD_IRQHandler          0x08010019    0x12  Code  Gb  FWCortex.o [1]
+PendSV_Handler          0x0800904b          Code  Gb  ASMCortex.o [1]
+RCC_ADCCLKConfig        0x080108cd    0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x080108df    0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_IRQHandler          0x08010061    0x12  Code  Gb  FWCortex.o [1]
+RTCInit                 0x08010c01   0x108  Code  Gb  RTCCortex.o [1]
+RTC_IRQHandler          0x0801003d    0x12  Code  Gb  FWCortex.o [1]
+Region$$Table$$Base     0x08014a94           --   Gb  - Linker created -
+Region$$Table$$Limit    0x08014ab8           --   Gb  - Linker created -
+SAECheckRxAllTimeOut    0x08013195    0x4a  Code  Gb  SAEJ1939.o [1]
+SAEInit                 0x08013181    0x14  Code  Gb  SAEJ1939.o [1]
+SAEProcessRxMsg         0x08013501   0x19a  Code  Gb  SAEJ1939.o [1]
+SAEProcessTxMsg         0x0801369b    0x8e  Code  Gb  SAEJ1939.o [1]
+SAERxPgnTblInit         0x080131df   0x2ac  Code  Gb  SAEJ1939.o [1]
+SAETxPgnTblInit         0x0801348b    0x76  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxAMCON        0x0801372f     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxCCPPAR       0x080138a5     0x8  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxCNFPACK      0x08013735     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxCNFPBAM      0x08013733     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxCRPRESS      0x0801374d     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxDM1          0x0801373f     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxDM11ACK      0x08013745     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxDM2          0x08013741     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxDM4          0x08013743     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxEEC1         0x08013729     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxEEC2         0x0801372b     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxEEC3         0x0801372d     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxEFL          0x0801373b     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxENGHOUR      0x0801374b     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxENGTEMP      0x08013737     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxINCON        0x08013747     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxLFC          0x0801373d     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxLFE          0x08013739     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxVEHPOW       0x08013749     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateRxVEHSPD       0x08013731     0x2  Code  Gb  SAEJ1939.o [1]
+SAEUpdateTxCCPREQ       0x0801389d     0x8  Code  Gb  SAEJ1939.o [1]
+SAEUpdateTxPGNRQ        0x0801374f    0x94  Code  Gb  SAEJ1939.o [1]
+SAEUpdateTxPGNRQ::ucSAETxFlagPGNRQ
+                        0x2000695f     0x1  Data  Lc  SAEJ1939.o [1]
+SCI2BufInit             0x0801174b    0x36  Code  Gb  SCI2Cortex.o [1]
+SCI2Dma1Ch6IntHook      0x08011735    0x16  Code  Gb  SCI2Cortex.o [1]
+SCI2Dma1Ch7IntHook      0x0801171f    0x16  Code  Gb  SCI2Cortex.o [1]
+SCI2GetChar             0x080117f3    0x66  Code  Gb  SCI2Cortex.o [1]
+SCI2GetTxChar           0x080117b1    0x42  Code  Gb  SCI2Cortex.o [1]
+SCI2HardInit            0x080118c3    0x6a  Code  Gb  SCI2Cortex.o [1]
+SCI2Init                0x08011461    0x18  Code  Gb  SCI2Cortex.o [1]
+SCI2OverTimerHook       0x0801171d     0x2  Code  Gb  SCI2Cortex.o [1]
+SCI2PutChar             0x08011859    0x6a  Code  Gb  SCI2Cortex.o [1]
+SCI2PutRxChar           0x08011781    0x30  Code  Gb  SCI2Cortex.o [1]
+SCI2Start               0x08011479    0x4e  Code  Gb  SCI2Cortex.o [1]
+SCI2TaskLoop            0x080114c7   0x1f8  Code  Gb  SCI2Cortex.o [1]
+SCI2TxRxIntHook         0x080116bf    0x5e  Code  Gb  SCI2Cortex.o [1]
+SCI3Dma1Ch2IntHook      0x08011e2f    0x1e  Code  Gb  SCI3Cortex.o [1]
+SCI3Dma1Ch3IntHook      0x08011e4d    0x16  Code  Gb  SCI3Cortex.o [1]
+SCI3HardInit            0x08011f09    0x76  Code  Gb  SCI3Cortex.o [1]
+SCI3Init                0x08011969   0x24e  Code  Gb  SCI3Cortex.o [1]
+SCI3InitOverTimer       0x08011e63    0x48  Code  Gb  SCI3Cortex.o [1]
+SCI3InitTxDma           0x08011f7f    0x20  Code  Gb  SCI3Cortex.o [1]
+SCI3OverTimerHook       0x08011d89    0xa6  Code  Gb  SCI3Cortex.o [1]
+SCI3SetOverTimer        0x08011eab    0x5e  Code  Gb  SCI3Cortex.o [1]
+SCI3SetupTxDma          0x08011f9f    0x62  Code  Gb  SCI3Cortex.o [1]
+SCI3Start               0x08011bb7    0x60  Code  Gb  SCI3Cortex.o [1]
+SCI3TaskLoop            0x08011c17    0x7c  Code  Gb  SCI3Cortex.o [1]
+SCI3TxRxIntHook         0x08011c93    0xf6  Code  Gb  SCI3Cortex.o [1]
+SCI4Dma2Ch3IntHook      0x080121bd    0x24  Code  Gb  SCI4Cortex.o [1]
+SCI4Dma2Ch5IntHook      0x080121a1    0x1c  Code  Gb  SCI4Cortex.o [1]
+SCI4HardInit            0x08012401    0x6a  Code  Gb  SCI4Cortex.o [1]
+SCI4Init                0x080120b1    0x1c  Code  Gb  SCI4Cortex.o [1]
+SCI4InitRxDma           0x080124f1    0x22  Code  Gb  SCI4Cortex.o [1]
+SCI4InitTxDma           0x0801246b    0x22  Code  Gb  SCI4Cortex.o [1]
+SCI4OverTimerHook       0x0801219f     0x2  Code  Gb  SCI4Cortex.o [1]
+SCI4ProcessMsg          0x080121e1   0x220  Code  Gb  SCI4Cortex.o [1]
+SCI4SetupRxDma          0x08012513    0x64  Code  Gb  SCI4Cortex.o [1]
+SCI4SetupTxDma          0x0801248d    0x64  Code  Gb  SCI4Cortex.o [1]
+SCI4Start               0x080120cd    0x7e  Code  Gb  SCI4Cortex.o [1]
+SCI4TaskLoop            0x0801214b    0x52  Code  Gb  SCI4Cortex.o [1]
+SCI4TxRxIntHook         0x0801219d     0x2  Code  Gb  SCI4Cortex.o [1]
+SDIO_IRQHandler         0x080100a9    0x12  Code  Gb  FWCortex.o [1]
+SFCheckMinMax32u        0x08000a1b    0xa6  Code  Gb  SFCortex.o [1]
+SFCheckModMsgCrc        0x080002fd    0x40  Code  Gb  SFCortex.o [1]
+SFCheckTime             0x0800013b    0x18  Code  Gb  SFCortex.o [1]
+SFCheckToSaveHstry      0x08001b95    0xfe  Code  Gb  SFCortex.o [1]
+SFCheckToSaveHstry::uiSum
+                        0x20006788     0x4  Data  Lc  SFCortex.o [1]
+SFCopy16s               0x08000755    0x7e  Code  Gb  SFCortex.o [1]
+SFFill16u               0x080007d3    0x5a  Code  Gb  SFCortex.o [1]
+SFFill32f               0x0800082d    0x5a  Code  Gb  SFCortex.o [1]
+SFGet1DMap10            0x08001169    0xbe  Code  Gb  SFCortex.o [1]
+SFGet1DMapCst10         0x08001227    0xbe  Code  Gb  SFCortex.o [1]
+SFGetAccKvarh           0x08001a59    0x40  Code  Gb  SFCortex.o [1]
+SFGetAccKvarh::uiSum    0x20006780     0x4  Data  Lc  SFCortex.o [1]
+SFGetAccKwh             0x08001a19    0x40  Code  Gb  SFCortex.o [1]
+SFGetAccKwh::uiSum      0x2000677c     0x4  Data  Lc  SFCortex.o [1]
+SFGetAccRunTime         0x08001a99    0x2e  Code  Gb  SFCortex.o [1]
+SFGetAccRunTime::uiSum  0x20006784     0x4  Data  Lc  SFCortex.o [1]
+SFGetAdcRef16u          0x08000ac1    0x14  Code  Gb  SFCortex.o [1]
+SFGetAirHeaterActive    0x08006009    0xee  Code  Gb  SFCortex.o [1]
+SFGetAirHeaterActive::usActive
+                        0x200068da     0x2  Data  Lc  SFCortex.o [1]
+SFGetAirHeaterActive::usTimer1
+                        0x200068d8     0x2  Data  Lc  SFCortex.o [1]
+SFGetAve16s             0x08000985    0x96  Code  Gb  SFCortex.o [1]
+SFGetCoolantFanActive   0x08006363    0x74  Code  Gb  SFCortex.o [1]
+SFGetCoolantFanActive::usActive
+                        0x200068e6     0x2  Data  Lc  SFCortex.o [1]
+SFGetCoolantFanActive::usTimer1
+                        0x200068e4     0x2  Data  Lc  SFCortex.o [1]
+SFGetCpuTemp            0x080016b7    0x2c  Code  Gb  SFCortex.o [1]
+SFGetCrc16Code          0x080002ad    0x3e  Code  Gb  SFCortex.o [1]
+SFGetEffAve             0x08000b53    0x9e  Code  Gb  SFCortex.o [1]
+SFGetEngStsIdling       0x08005f71    0x46  Code  Gb  SFCortex.o [1]
+SFGetEngStsIdling::uiCount
+                        0x20006794     0x4  Data  Lc  SFCortex.o [1]
+SFGetEngStsRated        0x08005fbd    0x38  Code  Gb  SFCortex.o [1]
+SFGetEngStsRated::uiCount
+                        0x20006798     0x4  Data  Lc  SFCortex.o [1]
+SFGetEngStsRunning      0x08005f35    0x38  Code  Gb  SFCortex.o [1]
+SFGetEngStsRunning::uiCount
+                        0x20006790     0x4  Data  Lc  SFCortex.o [1]
+SFGetEngStsStopped      0x08005efd    0x38  Code  Gb  SFCortex.o [1]
+SFGetEngStsStopped::uiCount
+                        0x2000678c     0x4  Data  Lc  SFCortex.o [1]
+SFGetErrorPidCtrl       0x080014bd    0x7c  Code  Gb  SFCortex.o [1]
+SFGetFuelSupplyActive   0x08006335    0x2e  Code  Gb  SFCortex.o [1]
+SFGetGensSwOffOutput    0x08006589    0x78  Code  Gb  SFCortex.o [1]
+SFGetGensSwOffOutput::usCtrlOld
+                        0x200068fa     0x2  Data  Lc  SFCortex.o [1]
+SFGetGensSwOffOutput::usOutput
+                        0x200068f8     0x2  Data  Lc  SFCortex.o [1]
+SFGetGensSwOffOutput::usTimer1
+                        0x200068f6     0x2  Data  Lc  SFCortex.o [1]
+SFGetGensSwOnOutput     0x0800651d    0x66  Code  Gb  SFCortex.o [1]
+SFGetGensSwOnOutput::usCtrlOld
+                        0x20000008     0x2  Data  Lc  SFCortex.o [1]
+SFGetGensSwOnOutput::usOutput
+                        0x200068f4     0x2  Data  Lc  SFCortex.o [1]
+SFGetGensSwOnOutput::usTimer1
+                        0x200068f2     0x2  Data  Lc  SFCortex.o [1]
+SFGetMacAve             0x08000d65    0xde  Code  Gb  SFCortex.o [1]
+SFGetMainSwOffOutput    0x08006499    0x78  Code  Gb  SFCortex.o [1]
+SFGetMainSwOffOutput::usCtrlOld
+                        0x200068f0     0x2  Data  Lc  SFCortex.o [1]
+SFGetMainSwOffOutput::usOutput
+                        0x200068ee     0x2  Data  Lc  SFCortex.o [1]
+SFGetMainSwOffOutput::usTimer1
+                        0x200068ec     0x2  Data  Lc  SFCortex.o [1]
+SFGetMainSwOnOutput     0x08006433    0x66  Code  Gb  SFCortex.o [1]
+SFGetMainSwOnOutput::usCtrlOld
+                        0x20000006     0x2  Data  Lc  SFCortex.o [1]
+SFGetMainSwOnOutput::usOutput
+                        0x200068ea     0x2  Data  Lc  SFCortex.o [1]
+SFGetMainSwOnOutput::usTimer1
+                        0x200068e8     0x2  Data  Lc  SFCortex.o [1]
+SFGetOilPumpActive      0x08006101    0xbc  Code  Gb  SFCortex.o [1]
+SFGetOilPumpActive::usActive
+                        0x200068de     0x2  Data  Lc  SFCortex.o [1]
+SFGetOilPumpActive::usTimer1
+                        0x200068dc     0x2  Data  Lc  SFCortex.o [1]
+SFGetPowerSpectrum      0x08000e43    0xee  Code  Gb  SFCortex.o [1]
+SFGetReactPwrOfAct      0x08001681    0x36  Code  Gb  SFCortex.o [1]
+SFGetSensorLevel        0x08001949    0xd0  Code  Gb  SFCortex.o [1]
+SFGetSensorPres         0x08001819   0x130  Code  Gb  SFCortex.o [1]
+SFGetSensorTemp         0x080016e3   0x130  Code  Gb  SFCortex.o [1]
+SFGetSpeedRatedActive   0x080063dd    0x56  Code  Gb  SFCortex.o [1]
+SFGetStarterActive      0x080061d1   0x150  Code  Gb  SFCortex.o [1]
+SFGetStarterActive::usActive
+                        0x200068e2     0x2  Data  Lc  SFCortex.o [1]
+SFGetStarterActive::usTimer1
+                        0x200068e0     0x2  Data  Lc  SFCortex.o [1]
+SFGetSum16u             0x08000887    0x70  Code  Gb  SFCortex.o [1]
+SFGetSum32f             0x080008f7    0x8e  Code  Gb  SFCortex.o [1]
+SFHardFreqCheckPeriod   0x080013b7    0x16  Code  Gb  SFCortex.o [1]
+SFHardFreqGetFreq       0x080013ad     0x4  Code  Gb  SFCortex.o [1]
+SFHardFreqGetPeriod     0x080013b1     0x6  Code  Gb  SFCortex.o [1]
+SFHardFreqGetPhsDiff    0x080013cd    0x2a  Code  Gb  SFCortex.o [1]
+SFHardFreqInit          0x080012e5    0x38  Code  Gb  SFCortex.o [1]
+SFHardFreqPutTime       0x08001333    0x7a  Code  Gb  SFCortex.o [1]
+SFHardFreqRefresh       0x0800131d    0x16  Code  Gb  SFCortex.o [1]
+SFI2tTimeOverCheck      0x0800160b    0x76  Code  Gb  SFCortex.o [1]
+SFI2tTimeOverInit       0x080015a5    0x66  Code  Gb  SFCortex.o [1]
+SFInit                  0x08000131     0xa  Code  Gb  SFCortex.o [1]
+SFInterp16u             0x0800023b    0x72  Code  Gb  SFCortex.o [1]
+SFModGetParams          0x0800036d    0x50  Code  Gb  SFCortex.o [1]
+SFModSetParam           0x080003bd    0x50  Code  Gb  SFCortex.o [1]
+SFModSetParams          0x0800040d    0x50  Code  Gb  SFCortex.o [1]
+SFMonitorEepDataError   0x08005e85    0x78  Code  Gb  SFCortex.o [1]
+SFMonitorEngFilter      0x08005c71    0x94  Code  Gb  SFCortex.o [1]
+SFMonitorEngFilter::usTimer1
+                        0x200068d6     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngLevel       0x0800587d   0x184  Code  Gb  SFCortex.o [1]
+SFMonitorEngLevel::usTimer1
+                        0x200068c8     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngLevel::usTimer2
+                        0x200068ca     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngPressure    0x08005709   0x16a  Code  Gb  SFCortex.o [1]
+SFMonitorEngPressure::usStart
+                        0x200068c0     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngPressure::usTimer1
+                        0x200068c2     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngPressure::usTimer2
+                        0x200068c4     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngPressure::usTimer3
+                        0x200068c6     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngSpeedDelta  0x08005299   0x160  Code  Gb  SFCortex.o [1]
+SFMonitorEngSpeedDelta::usTimer1
+                        0x200068b0     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngSpeedDelta::usTimer2
+                        0x200068b2     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngSpeedHigh   0x08005095    0xf4  Code  Gb  SFCortex.o [1]
+SFMonitorEngSpeedHigh::usTimer1
+                        0x200068a8     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngSpeedHigh::usTimer2
+                        0x200068aa     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngSpeedLow    0x0800518d   0x104  Code  Gb  SFCortex.o [1]
+SFMonitorEngSpeedLow::usTimer1
+                        0x200068ac     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngSpeedLow::usTimer2
+                        0x200068ae     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngSpeedRamp   0x080053f9    0x82  Code  Gb  SFCortex.o [1]
+SFMonitorEngSpeedRamp::usTimer1
+                        0x200068b4     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngStopping    0x08005481    0x50  Code  Gb  SFCortex.o [1]
+SFMonitorEngStopping::usTimer1
+                        0x200068b6     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngTemperature
+                        0x080054e5   0x21c  Code  Gb  SFCortex.o [1]
+SFMonitorEngTemperature::usTimer1
+                        0x200068b8     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngTemperature::usTimer2
+                        0x200068ba     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngTemperature::usTimer3
+                        0x200068bc     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngTemperature::usTimer4
+                        0x200068be     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngVoltage     0x08005a0d   0x25a  Code  Gb  SFCortex.o [1]
+SFMonitorEngVoltage::usStart
+                        0x200068cc     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngVoltage::usTimer1
+                        0x200068ce     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngVoltage::usTimer2
+                        0x200068d0     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngVoltage::usTimer3
+                        0x200068d2     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorEngVoltage::usTimer4
+                        0x200068d4     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensActPwr     0x08004629   0x11a  Code  Gb  SFCortex.o [1]
+SFMonitorGensActPwr::usTimer1
+                        0x20006892     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensAppPwr     0x0800484b    0xfc  Code  Gb  SFCortex.o [1]
+SFMonitorGensAppPwr::usTimer1
+                        0x20006896     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensCurrLong   0x08004395   0x168  Code  Gb  SFCortex.o [1]
+SFMonitorGensCurrLongInit
+                        0x08004335    0x5a  Code  Gb  SFCortex.o [1]
+SFMonitorGensCurrShort  0x08004035   0x300  Code  Gb  SFCortex.o [1]
+SFMonitorGensCurrShort::usTimer1
+                        0x2000688a     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensCurrShort::usTimer2
+                        0x2000688c     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensCurrShort::usTimer3
+                        0x2000688e     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensCurrUnb    0x080044fd   0x11e  Code  Gb  SFCortex.o [1]
+SFMonitorGensCurrUnb::usTimer1
+                        0x20006890     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensFactor     0x08004a65   0x152  Code  Gb  SFCortex.o [1]
+SFMonitorGensFactor::usTimer1
+                        0x2000689a     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensFreq       0x08003c1d   0x224  Code  Gb  SFCortex.o [1]
+SFMonitorGensFreq::usTimer1
+                        0x20006880     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensFreq::usTimer2
+                        0x20006882     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensFreq::usTimer3
+                        0x20006884     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensFreq::usTimer4
+                        0x20006886     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensInvPwr     0x0800494d   0x100  Code  Gb  SFCortex.o [1]
+SFMonitorGensInvPwr::usTimer1
+                        0x20006898     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensMagLost    0x08004bbd   0x11e  Code  Gb  SFCortex.o [1]
+SFMonitorGensMagLost::usTimer1
+                        0x2000689c     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensPhase      0x08003e45   0x1a8  Code  Gb  SFCortex.o [1]
+SFMonitorGensPhase::usTimer1
+                        0x20006888     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensReactPwr   0x08004749   0x102  Code  Gb  SFCortex.o [1]
+SFMonitorGensReactPwr::usTimer1
+                        0x20006894     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensReadyToLoad
+                        0x08004d7d   0x178  Code  Gb  SFCortex.o [1]
+SFMonitorGensReadyToLoad::usTimer1
+                        0x200068a0     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensReadyToLoad::usTimer2
+                        0x200068a2     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensSyncTimeOver
+                        0x08004cdb    0x94  Code  Gb  SFCortex.o [1]
+SFMonitorGensSyncTimeOver::usTimer1
+                        0x2000689e     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt       0x0800369d   0x580  Code  Gb  SFCortex.o [1]
+SFMonitorGensVolt::usTimer1
+                        0x20006868     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer10
+                        0x2000687a     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer11
+                        0x2000687c     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer12
+                        0x2000687e     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer2
+                        0x2000686a     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer3
+                        0x2000686c     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer4
+                        0x2000686e     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer5
+                        0x20006870     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer6
+                        0x20006872     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer7
+                        0x20006874     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer8
+                        0x20006876     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorGensVolt::usTimer9
+                        0x20006878     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorKeyAutoOrManual
+                        0x08005e3d    0x44  Code  Gb  SFCortex.o [1]
+SFMonitorKeyCmdToStop   0x08005d05    0x56  Code  Gb  SFCortex.o [1]
+SFMonitorKeyCmdToSwOn   0x08005dc1    0x78  Code  Gb  SFCortex.o [1]
+SFMonitorLoadSchedHigh  0x08004ef5    0xd0  Code  Gb  SFCortex.o [1]
+SFMonitorLoadSchedHigh::usTimer1
+                        0x200068a4     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorLoadSchedLow   0x08004fc5    0xd0  Code  Gb  SFCortex.o [1]
+SFMonitorLoadSchedLow::usTimer1
+                        0x200068a6     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainCurrLongInit
+                        0x080032cd    0x4e  Code  Gb  SFCortex.o [1]
+SFMonitorMainFreq       0x08002f21   0x20a  Code  Gb  SFCortex.o [1]
+SFMonitorMainFreq::usTimer1
+                        0x20006858     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainFreq::usTimer2
+                        0x2000685a     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainPhase      0x0800312b   0x194  Code  Gb  SFCortex.o [1]
+SFMonitorMainPhase::usTimer1
+                        0x2000685c     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainSynFreq    0x080034c1   0x11c  Code  Gb  SFCortex.o [1]
+SFMonitorMainSynFreq::usTimer1
+                        0x20006862     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainSynFreq::usTimer2
+                        0x20006864     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainSynVolt    0x08003345   0x16e  Code  Gb  SFCortex.o [1]
+SFMonitorMainSynVolt::usTimer1
+                        0x2000685e     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainSynVolt::usTimer2
+                        0x20006860     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainVolt       0x080029d1   0x550  Code  Gb  SFCortex.o [1]
+SFMonitorMainVolt::usTimer1
+                        0x2000684c     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainVolt::usTimer2
+                        0x2000684e     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainVolt::usTimer3
+                        0x20006850     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainVolt::usTimer4
+                        0x20006852     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainVolt::usTimer5
+                        0x20006854     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainVolt::usTimer6
+                        0x20006856     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorMainVoltLost   0x080035e1    0xae  Code  Gb  SFCortex.o [1]
+SFMonitorMainVoltLost::usTimer1
+                        0x20006866     0x2  Data  Lc  SFCortex.o [1]
+SFMonitorSwtCmdToStop   0x08005d5b    0x60  Code  Gb  SFCortex.o [1]
+SFProcessRxModMsg       0x0800045d   0x2f8  Code  Gb  SFCortex.o [1]
+SFResetOneError         0x0800281d   0x1ae  Code  Gb  SFCortex.o [1]
+SFResetSwitchDelay      0x08001597     0xe  Code  Gb  SFCortex.o [1]
+SFSetupModMsgCrc        0x0800033d    0x30  Code  Gb  SFCortex.o [1]
+SFSoftFreqInit          0x08000f31    0x36  Code  Gb  SFCortex.o [1]
+SFSoftFreqRefresh       0x08000f67   0x202  Code  Gb  SFCortex.o [1]
+SFSpdPulseGetSpeed      0x08001445     0x4  Code  Gb  SFCortex.o [1]
+SFSpdPulseInit          0x080013f7    0x34  Code  Gb  SFCortex.o [1]
+SFSpdPulsePutTime       0x08001449    0x74  Code  Gb  SFCortex.o [1]
+SFSpdPulseRefrash       0x0800142b    0x1a  Code  Gb  SFCortex.o [1]
+SFSqrt32u               0x08000155    0xe6  Code  Gb  SFCortex.o [1]
+SFSubEffAve             0x08000bf1    0x9e  Code  Gb  SFCortex.o [1]
+SFSubRef16s             0x08000ad5    0x7e  Code  Gb  SFCortex.o [1]
+SFSwitchDelay           0x08001539    0x5e  Code  Gb  SFCortex.o [1]
+SFTriEffAve             0x08000c8f    0xd6  Code  Gb  SFCortex.o [1]
+SFUpdataStatistics      0x08001ac7    0xce  Code  Gb  SFCortex.o [1]
+SFUpdataStatistics::usTimer1
+                        0x2000684a     0x2  Data  Lc  SFCortex.o [1]
+SFUpdateAnalogStatus    0x08001cad   0x5e8  Code  Gb  SFCortex.o [1]
+SFUpdateBoardKeyStatus  0x08002775    0x8e  Code  Gb  SFCortex.o [1]
+SFUpdateSwitchesStatus  0x0800239d   0x3c6  Code  Gb  SFCortex.o [1]
+SPI1_IRQHandler         0x0801042d     0xc  Code  Gb  FWCortex.o [1]
+SPI2_IRQHandler         0x08010439     0xc  Code  Gb  FWCortex.o [1]
+SPI3_IRQHandler         0x08010445     0xc  Code  Gb  FWCortex.o [1]
+SVC_Handler             0x0800ffe1    0x12  Code  Gb  FWCortex.o [1]
+SetSysClock             0x0801458d     0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72         0x08014595    0xe0  Code  Lc  system_stm32f10x.o [1]
+SysTick_Handler         0x0800fff3    0x14  Code  Gb  FWCortex.o [1]
+SystemInit              0x08014539    0x54  Code  Gb  system_stm32f10x.o [1]
+TAMPER_IRQHandler       0x0801002b    0x12  Code  Gb  FWCortex.o [1]
+TIM1_CC_IRQHandler      0x0801020f     0xe  Code  Gb  FWCortex.o [1]
+TIM2_IRQHandler         0x0801021d    0xb6  Code  Gb  FWCortex.o [1]
+TIM3_IRQHandler         0x080102d3    0x10  Code  Gb  FWCortex.o [1]
+TIM4_IRQHandler         0x080102e3     0xe  Code  Gb  FWCortex.o [1]
+TIM5_IRQHandler         0x080102f1     0xe  Code  Gb  FWCortex.o [1]
+TIM6_IRQHandler         0x080102ff     0xe  Code  Gb  FWCortex.o [1]
+TIM7_IRQHandler         0x0801030d     0xe  Code  Gb  FWCortex.o [1]
+TIM8_CC_IRQHandler      0x0801031b     0xe  Code  Gb  FWCortex.o [1]
+UART4_IRQHandler        0x0801047d    0x10  Code  Gb  FWCortex.o [1]
+UART5_IRQHandler        0x0801048d     0xc  Code  Gb  FWCortex.o [1]
+USART1_IRQHandler       0x08010451     0xc  Code  Gb  FWCortex.o [1]
+USART2_IRQHandler       0x0801045d    0x10  Code  Gb  FWCortex.o [1]
+USART3_IRQHandler       0x0801046d    0x10  Code  Gb  FWCortex.o [1]
+USBWakeUp_IRQHandler    0x08010201     0xe  Code  Gb  FWCortex.o [1]
+USB_HP_CAN1_TX_IRQHandler
+                        0x080101c1    0x10  Code  Gb  FWCortex.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x080101d1    0x10  Code  Gb  FWCortex.o [1]
+UsageFault_Handler      0x08015029     0x2  Code  Gb  stm32f10x_it.o [1]
+WWDG_IRQHandler         0x08010007    0x12  Code  Gb  FWCortex.o [1]
+XIOADC3Hook             0x0800f0d9    0x3c  Code  Gb  XIOCortex.o [1]
+XIOConfigGPIO           0x0800f919    0xea  Code  Gb  XIOCortex.o [1]
+XIODma1Ch1IntHook       0x0800e1b9    0x76  Code  Gb  XIOCortex.o [1]
+XIOGetAdcChanDat        0x0800e23d    0xea  Code  Gb  XIOCortex.o [1]
+XIOGetSwitchesOutput    0x0800e4a9   0x588  Code  Gb  XIOCortex.o [1]
+XIOInit                 0x0800c7fd   0x2c8  Code  Gb  XIOCortex.o [1]
+XIOInitADC1             0x0800ede9   0x1a2  Code  Gb  XIOCortex.o [1]
+XIOInitADC3             0x0800f02d    0xac  Code  Gb  XIOCortex.o [1]
+XIOInitDigInput         0x0800ea3f   0x12a  Code  Gb  XIOCortex.o [1]
+XIOInitDigOutput        0x0800eba9   0x158  Code  Gb  XIOCortex.o [1]
+XIOInitDma1Ch1Adc       0x0800ef99    0x90  Code  Gb  XIOCortex.o [1]
+XIOInitTim1             0x0800f115    0xd4  Code  Gb  XIOCortex.o [1]
+XIOInitTim1AdcTriger    0x0800f1e9    0x5c  Code  Gb  XIOCortex.o [1]
+XIOInitTim2             0x0800f245    0xd4  Code  Gb  XIOCortex.o [1]
+XIOInitTim3             0x0800f31d    0xd4  Code  Gb  XIOCortex.o [1]
+XIOInitTim3FrqIn        0x0800f3f9    0x86  Code  Gb  XIOCortex.o [1]
+XIOInitTim4             0x0800f53d    0xd4  Code  Gb  XIOCortex.o [1]
+XIOInitTim4PwmOut       0x0800f641     0x2  Code  Gb  XIOCortex.o [1]
+XIOReadBoardKeyInput    0x0800e3e5    0xa0  Code  Gb  XIOCortex.o [1]
+XIOReadSwitchesInput    0x0800e339    0x92  Code  Gb  XIOCortex.o [1]
+XIOResetGPIO            0x0800f769   0x15a  Code  Gb  XIOCortex.o [1]
+XIOStart                0x0800cc19    0x20  Code  Gb  XIOCortex.o [1]
+XIOTaskLoop             0x0800cc39  0x1568  Code  Gb  XIOCortex.o [1]
+XIOTim3IntHook          0x0800f491    0xa8  Code  Gb  XIOCortex.o [1]
+XIOUpdateBoardLedOutput
+                        0x0800ea3d     0x2  Code  Gb  XIOCortex.o [1]
+XIOUpdatePwmOutput      0x0800ed0d    0xb0  Code  Gb  XIOCortex.o [1]
+XIOUpdateTim4PwmCh      0x0800f649    0xf6  Code  Gb  XIOCortex.o [1]
+__aeabi_cfcmpeq         0x0801303d          Code  Gb  FltCmpEq.o [4]
+__aeabi_f2iz            0x08013155          Code  Gb  FltToS32.o [4]
+__aeabi_fadd            0x08008301          Code  Gb  FltAdd.o [4]
+__aeabi_fdiv            0x08013059          Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x080083e5          Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x080090a5          Code  Gb  FltSub.o [4]
+__aeabi_i2f             0x08013019          Code  Gb  S32ToFlt.o [4]
+__aeabi_ldiv0           0x08009125          Code  Gb  I64DivZer.o [5]
+__aeabi_ldivmod         0x080084bd          Code  Gb  I64DivMod.o [5]
+__aeabi_ui2f            0x0801428d          Code  Gb  U32ToFlt.o [4]
+__aeabi_uldivmod        0x08008501          Code  Gb  I64DivMod.o [5]
+__cmain                 0x08014ab9          Code  Gb  cmain.o [5]
+__exit                  0x08014aed    0x14  Code  Gb  exit.o [6]
+__iar_copy_init3        0x08014a41    0x2c  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x08014a6d    0x28  Code  Gb  data_init.o [5]
+__iar_fadd              0x080090b1          Code  Gb  FltSub.o [4]
+__iar_fsub              0x0800830d          Code  Gb  FltAdd.o [4]
+__iar_fsubStart         0x0800831d          Code  Gb  FltAdd.o [4]
+__iar_program_start     0x0801502d          Code  Gb  cstartup_M.o [5]
+__iar_systems$$module {Abs}
+                        0x00000001          Data  Gb  command line/config [2]
+__iar_zero_init3        0x08014a01    0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x08014ad7     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000          Data  Gb  startup_stm32f10x_hd.o [1]
+_call_main              0x08014ac5          Code  Gb  cmain.o [5]
+_exit                   0x08014ae1          Code  Gb  cexit.o [5]
+_main                   0x08014ad3          Code  Gb  cmain.o [5]
+aDBCurve                0x200021c4   0x320  Data  Gb  DBCortex.o [1]
+aDBFunct                0x20005628    0xf0  Data  Gb  DBCortex.o [1]
+aDBMeasu                0x200016fc   0x3e8  Data  Gb  DBCortex.o [1]
+aDBParam                0x20001ae4   0x3c0  Data  Gb  DBCortex.o [1]
+aSCI4RxBuf              0x20006468    0x28  Data  Gb  SCI4Cortex.o [1]
+aSCI4TxBuf              0x2000130c   0x3f0  Data  Gb  SCI4Cortex.o [1]
+aSFCrc16TabHi           0x08014790   0x100  Data  Gb  SFCortex.o [1]
+aSFCrc16TabLo           0x08014890   0x100  Data  Gb  SFCortex.o [1]
+aSFLevelMap0Adc         0x08014ce0    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap0Lvl         0x08014cf4    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap1Adc         0x08014d08    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap1Lvl         0x08014d1c    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap2Adc         0x08014d30    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap2Lvl         0x08014d44    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap3Adc         0x08014d58    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap3Lvl         0x08014d6c    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap4Adc         0x08014d80    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap4Lvl         0x08014d94    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap5Adc         0x08014da8    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap5Lvl         0x08014dbc    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap6Adc         0x08014dd0    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap6Lvl         0x08014de4    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap7Adc         0x08014df8    0x14  Data  Gb  SFCortex.o [1]
+aSFLevelMap7Lvl         0x08014e0c    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap0Adc         0x08014e20    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap0Prs         0x08014e34    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap10Adc        0x08014fb0    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap10Prs        0x08014fc4    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap11Adc        0x08014fd8    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap11Prs        0x08014fec    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap1Adc         0x08014e48    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap1Prs         0x08014e5c    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap2Adc         0x08014e70    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap2Prs         0x08014e84    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap3Adc         0x08014e98    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap3Prs         0x08014eac    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap4Adc         0x08014ec0    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap4Prs         0x08014ed4    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap5Adc         0x08014ee8    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap5Prs         0x08014efc    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap6Adc         0x08014f10    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap6Prs         0x08014f24    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap7Adc         0x08014f38    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap7Prs         0x08014f4c    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap8Adc         0x08014f60    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap8Prs         0x08014f74    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap9Adc         0x08014f88    0x14  Data  Gb  SFCortex.o [1]
+aSFPressMap9Prs         0x08014f9c    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap0Adc          0x08014b00    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap0Tmp          0x08014b14    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap10Adc         0x08014c90    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap10Tmp         0x08014ca4    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap11Adc         0x08014cb8    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap11Tmp         0x08014ccc    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap1Adc          0x08014b28    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap1Tmp          0x08014b3c    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap2Adc          0x08014b50    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap2Tmp          0x08014b64    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap3Adc          0x08014b78    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap3Tmp          0x08014b8c    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap4Adc          0x08014ba0    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap4Tmp          0x08014bb4    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap5Adc          0x08014bc8    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap5Tmp          0x08014bdc    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap6Adc          0x08014bf0    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap6Tmp          0x08014c04    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap7Adc          0x08014c18    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap7Tmp          0x08014c2c    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap8Adc          0x08014c40    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap8Tmp          0x08014c54    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap9Adc          0x08014c68    0x14  Data  Gb  SFCortex.o [1]
+aSFTempMap9Tmp          0x08014c7c    0x14  Data  Gb  SFCortex.o [1]
+armBitRevIndexTable64   0x08014990    0x70  Data  Gb  arm_common_tables.o [1]
+arm_bitreversal_32      0x08014221          Code  Gb  arm_bitreversal2.o [1]
+arm_cfft_f32            0x08012f41    0xd6  Code  Gb  arm_cfft_f32.o [1]
+arm_cfft_radix8by2_f32  0x080125f5   0x288  Code  Gb  arm_cfft_f32.o [1]
+arm_cfft_radix8by4_f32  0x0801287d   0x6c4  Code  Gb  arm_cfft_f32.o [1]
+arm_cfft_sR_f32_len64   0x08015000    0x10  Data  Gb  FFTCortex.o [1]
+arm_radix8_butterfly_f32
+                        0x080138ad   0x974  Code  Gb  arm_cfft_radix8_f32.o [1]
+dbOSRdyIndex            0x2000683e     0x2  Data  Gb  OSCortex.o [1]
+exit                    0x08014adb     0x4  Code  Gb  exit.o [3]
+fFFTDatBuffer           0x20003fe4   0x200  Data  Gb  FFTCortex.o [1]
+fFFTDatFilter           0x20005af0    0x80  Data  Gb  FFTCortex.o [1]
+main                    0x0800fb35    0x5e  Code  Gb  FWCortex.o [1]
+pOSEventFreeList        0x2000675c     0x4  Data  Gb  OSCortex.o [1]
+pOSTCBCur               0x20006754     0x4  Data  Gb  OSCortex.o [1]
+pOSTCBFree              0x20006758     0x4  Data  Gb  OSCortex.o [1]
+pOSTCBHighRdy           0x20006750     0x4  Data  Gb  OSCortex.o [1]
+pOSTCBPrioTbl           0x20006370    0x40  Data  Gb  OSCortex.o [1]
+pXIOAdcDmaBuf           0x200067e4     0x4  Data  Gb  XIOCortex.o [1]
+pXIOFftDatBuf           0x200067e8     0x4  Data  Gb  XIOCortex.o [1]
+sCAN1IntrRxMsg          0x200066f0     0xc  Data  Gb  CAN1Cortex.o [1]
+sCAN1IntrTxMsg          0x200066fc     0xc  Data  Gb  CAN1Cortex.o [1]
+sCAN1RingBuf            0x20005808    0xe0  Data  Gb  CAN1Cortex.o [1]
+sCAN1TaskRxMsg          0x200066d8     0xc  Data  Gb  CAN1Cortex.o [1]
+sCAN1TaskTxMsg          0x200066e4     0xc  Data  Gb  CAN1Cortex.o [1]
+sCAN2EngTbl             0x20001ea4   0x320  Data  Gb  CAN2Cortex.o [1]
+sCCP10RxPar             0x20006710     0x8  Data  Gb  CCPCortex.o [1]
+sCCP10TxReq             0x20006708     0x8  Data  Gb  CCPCortex.o [1]
+sCTLKeyErrReset         0x20006718     0x8  Data  Gb  CTLCortex.o [1]
+sDBCmdRingBuf           0x200065b0    0x18  Data  Gb  DBCortex.o [1]
+sDBHstryBlck            0x200063b0    0x30  Data  Gb  DBCortex.o [1]
+sFFTRingBuf             0x2000669c    0x14  Data  Gb  FFTCortex.o [1]
+sOSEventTbl             0x200059b0    0xc0  Data  Gb  OSCortex.o [1]
+sOSTCBTbl               0x200053e4   0x140  Data  Gb  OSCortex.o [1]
+sSAERxPgnTbl            0x20005718    0xf0  Data  Gb  SAEJ1939.o [1]
+sSAETxPgnTbl            0x200065c8    0x18  Data  Gb  SAEJ1939.o [1]
+sSCI2RingBuf            0x200063e0    0x30  Data  Gb  SCI2Cortex.o [1]
+sSCI3ModbusMsg          0x20005524   0x104  Data  Gb  SCI3Cortex.o [1]
+sSFI2tGensCurrA         0x20006640    0x18  Data  Gb  SFCortex.o [1]
+sSFI2tGensCurrB         0x20006658    0x18  Data  Gb  SFCortex.o [1]
+sSFI2tGensCurrC         0x20006670    0x18  Data  Gb  SFCortex.o [1]
+sSFI2tMainCurrA         0x200065f8    0x18  Data  Gb  SFCortex.o [1]
+sSFI2tMainCurrB         0x20006610    0x18  Data  Gb  SFCortex.o [1]
+sSFI2tMainCurrC         0x20006628    0x18  Data  Gb  SFCortex.o [1]
+sXIOHardFreq0           0x20006410    0x2c  Data  Gb  XIOCortex.o [1]
+sXIOHardFreq1           0x2000643c    0x2c  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq0           0x20006490    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq1           0x200064b0    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq2           0x200064d0    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq3           0x200064f0    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq4           0x20006510    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq5           0x20006530    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq6           0x20006550    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq7           0x20006570    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSoftFreq8           0x20006590    0x20  Data  Gb  XIOCortex.o [1]
+sXIOSpdPulse0           0x200066b0    0x14  Data  Gb  XIOCortex.o [1]
+sXIOSpdPulse1           0x200066c4    0x14  Data  Gb  XIOCortex.o [1]
+siXIOCrossMac12         0x200067a0     0x4  Data  Gb  XIOCortex.o [1]
+siXIOCrossMac45         0x200067a4     0x4  Data  Gb  XIOCortex.o [1]
+siXIOCrossMac78         0x200067a8     0x4  Data  Gb  XIOCortex.o [1]
+siXIOGensActPA          0x200067ac     0x4  Data  Gb  XIOCortex.o [1]
+siXIOGensActPAll        0x200067b8     0x4  Data  Gb  XIOCortex.o [1]
+siXIOGensActPB          0x200067b0     0x4  Data  Gb  XIOCortex.o [1]
+siXIOGensActPC          0x200067b4     0x4  Data  Gb  XIOCortex.o [1]
+ssFFTDatInput           0x20005a70    0x80  Data  Gb  FFTCortex.o [1]
+ssXIOAdcArray0          0x200024e4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcArray1          0x200027e4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcArray2          0x20002ae4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcArray3          0x20002de4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcArray4          0x200030e4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcArray5          0x200033e4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcArray6          0x200036e4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcArray7          0x200039e4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcArray8          0x20003ce4   0x300  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat0          0x20005b70    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat1          0x20005bf0    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat10         0x20006070    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat11         0x200060f0    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat12         0x20006170    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat13         0x200061f0    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat14         0x20006270    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat15         0x200062f0    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat2          0x20005c70    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat3          0x20005cf0    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat4          0x20005d70    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat5          0x20005df0    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat6          0x20005e70    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat7          0x20005ef0    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat8          0x20005f70    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOAdcChDat9          0x20005ff0    0x80  Data  Gb  XIOCortex.o [1]
+ssXIOHardPhsDiffer      0x20006950     0x2  Data  Gb  XIOCortex.o [1]
+ssXIOSoftPhsDiffer      0x2000694e     0x2  Data  Gb  XIOCortex.o [1]
+twiddleCoef_64          0x08014338   0x200  Data  Gb  arm_common_tables.o [1]
+ucCAN2NumOfWork         0x20006956     0x1  Data  Gb  CAN2Cortex.o [1]
+ucCAN2PrioReadyHigh     0x20006958     0x1  Data  Gb  CAN2Cortex.o [1]
+ucCAN2PrioStartHigh     0x20006957     0x1  Data  Gb  CAN2Cortex.o [1]
+ucCAN2PrioTotalHigh     0x2000695a     0x1  Data  Gb  CAN2Cortex.o [1]
+ucCAN2PrioWorkLow       0x20006959     0x1  Data  Gb  CAN2Cortex.o [1]
+ucOSIntNesting          0x2000695c     0x1  Data  Gb  OSCortex.o [1]
+ucOSPrioCur             0x2000695d     0x1  Data  Gb  OSCortex.o [1]
+ucOSPrioHighRdy         0x2000695e     0x1  Data  Gb  OSCortex.o [1]
+ucOSRunning             0x2000695b     0x1  Data  Gb  OSCortex.o [1]
+ucOSUnMapTbl            0x08014690   0x100  Data  Gb  OSCortex.o [1]
+ucSCI3CtrlStep          0x20006960     0x1  Data  Gb  SCI3Cortex.o [1]
+ucSCI3RxByteCnt         0x20006961     0x1  Data  Gb  SCI3Cortex.o [1]
+ucSCI3TxByteCnt         0x20006962     0x1  Data  Gb  SCI3Cortex.o [1]
+uiCAN1Status            0x20006720     0x4  Data  Gb  CAN1Cortex.o [1]
+uiCTLStatus             0x20006724     0x4  Data  Gb  CTLCortex.o [1]
+uiDBStatus              0x20006730     0x4  Data  Gb  DBCortex.o [1]
+uiFFTStatus             0x20006734     0x4  Data  Gb  FFTCortex.o [1]
+uiFWStatus              0x20006738     0x4  Data  Gb  FWCortex.o [1]
+uiFWSynchro             0x2000673c     0x4  Data  Gb  FWCortex.o [1]
+uiLCDStatus             0x20006740     0x4  Data  Gb  LCDCortex.o [1]
+uiOSIdleCtr             0x20006748     0x4  Data  Gb  OSCortex.o [1]
+uiOSIdleCtrMax          0x20006744     0x4  Data  Gb  OSCortex.o [1]
+uiOSTime                0x2000674c     0x4  Data  Gb  OSCortex.o [1]
+uiRTCStatus             0x20006760     0x4  Data  Gb  RTCCortex.o [1]
+uiSAEStatus             0x20006764     0x4  Data  Gb  SAEJ1939.o [1]
+uiSCI2Status            0x20006768     0x4  Data  Gb  SCI2Cortex.o [1]
+uiSCI3BaudRate          0x20006770     0x4  Data  Gb  SCI3Cortex.o [1]
+uiSCI3Status            0x2000676c     0x4  Data  Gb  SCI3Cortex.o [1]
+uiSCI4Status            0x20006774     0x4  Data  Gb  SCI4Cortex.o [1]
+uiSFStatus              0x20006778     0x4  Data  Gb  SFCortex.o [1]
+uiXIOAdcRefSum0         0x200067ec     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOAdcRefSum1         0x200067f0     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOAdcRefSum2         0x200067f4     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOAdcRefSum3         0x200067f8     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOAdcRefSum4         0x200067fc     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOAdcRefSum5         0x20006800     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOAdcRefSum6         0x20006804     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOAdcRefSum7         0x20006808     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOAdcRefSum8         0x2000680c     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOGensActPrd         0x200067d0     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOHardPrdGensA       0x200067d4     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOHardPrdMainA       0x200067c0     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOMainActPrd         0x200067bc     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOSoftPrdGensA       0x200067d8     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOSoftPrdGensB       0x200067dc     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOSoftPrdGensC       0x200067e0     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOSoftPrdMainA       0x200067c4     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOSoftPrdMainB       0x200067c8     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOSoftPrdMainC       0x200067cc     0x4  Data  Gb  XIOCortex.o [1]
+uiXIOStatus             0x2000679c     0x4  Data  Gb  XIOCortex.o [1]
+usFFTCalcTime           0x20006820     0x2  Data  Gb  FFTCortex.o [1]
+usFW100msTimer          0x20006824     0x2  Data  Gb  FWCortex.o [1]
+usFW5msTimer            0x20006822     0x2  Data  Gb  FWCortex.o [1]
+usFWCan1StackUsage      0x20006828     0x2  Data  Gb  FWCortex.o [1]
+usFWDbStackUsage        0x20006830     0x2  Data  Gb  FWCortex.o [1]
+usFWFftStackUsage       0x20006832     0x2  Data  Gb  FWCortex.o [1]
+usFWLcdStackUsage       0x20006838     0x2  Data  Gb  FWCortex.o [1]
+usFWSci2StackUsage      0x2000682a     0x2  Data  Gb  FWCortex.o [1]
+usFWSci3StackUsage      0x2000682c     0x2  Data  Gb  FWCortex.o [1]
+usFWSci4StackUsage      0x2000682e     0x2  Data  Gb  FWCortex.o [1]
+usFWXioStackUsage       0x20006826     0x2  Data  Gb  FWCortex.o [1]
+usOSCPUUsage            0x2000683a     0x2  Data  Gb  OSCortex.o [1]
+usOSIdleStackUsage      0x20006836     0x2  Data  Gb  FWCortex.o [1]
+usOSStatStackUsage      0x20006834     0x2  Data  Gb  FWCortex.o [1]
+usOSTimeOverCnt         0x2000683c     0x2  Data  Gb  OSCortex.o [1]
+usSCI3OverTime1P5       0x20006840     0x2  Data  Gb  SCI3Cortex.o [1]
+usSCI3OverTime2P0       0x20006842     0x2  Data  Gb  SCI3Cortex.o [1]
+usSCI3OverTime2P5       0x20006844     0x2  Data  Gb  SCI3Cortex.o [1]
+usSCI3OverTime4P0       0x20006846     0x2  Data  Gb  SCI3Cortex.o [1]
+usSCI3OverTime4P5       0x20006848     0x2  Data  Gb  SCI3Cortex.o [1]
+usXIOAdcChEff0          0x20006910     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff03         0x20006922     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff036        0x20006928     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff06         0x20006924     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff1          0x20006912     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff14         0x2000692a     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff147        0x20006930     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff17         0x2000692c     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff2          0x20006914     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff3          0x20006916     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff36         0x20006926     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff4          0x20006918     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff47         0x2000692e     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff5          0x2000691a     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff6          0x2000691c     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff7          0x2000691e     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChEff8          0x20006920     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef0          0x200068fe     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef1          0x20006900     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef2          0x20006902     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef3          0x20006904     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef4          0x20006906     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef5          0x20006908     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef6          0x2000690a     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef7          0x2000690c     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcChRef8          0x2000690e     0x2  Data  Gb  XIOCortex.o [1]
+usXIOAdcDmaBuf0         0x2000000c   0x780  Data  Gb  XIOCortex.o [1]
+usXIOAdcDmaBuf1         0x2000078c   0x780  Data  Gb  XIOCortex.o [1]
+usXIOCalcTime           0x200068fc     0x2  Data  Gb  XIOCortex.o [1]
+usXIOGensSmpSiz         0x20006954     0x2  Data  Gb  XIOCortex.o [1]
+usXIOHardFreqGensA      0x20006940     0x2  Data  Gb  XIOCortex.o [1]
+usXIOHardFreqMainA      0x20006932     0x2  Data  Gb  XIOCortex.o [1]
+usXIOMainSmpSiz         0x20006952     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftFreqGensA      0x20006942     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftFreqGensB      0x20006944     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftFreqGensC      0x20006946     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftFreqMainA      0x20006934     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftFreqMainB      0x20006936     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftFreqMainC      0x20006938     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftPhsGensA       0x20006948     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftPhsGensB       0x2000694a     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftPhsGensC       0x2000694c     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftPhsMainA       0x2000693a     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftPhsMainB       0x2000693c     0x2  Data  Gb  XIOCortex.o [1]
+usXIOSoftPhsMainC       0x2000693e     0x2  Data  Gb  XIOCortex.o [1]
+
+
+[1] = E:\CortexCODE\TEST\4800\NewVerb\SoftGenSET015TEST\Debug\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  83 376 bytes of readonly  code memory
+   2 736 bytes of readonly  data memory
+  31 073 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
