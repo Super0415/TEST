@@ -1,18 +1,19 @@
+2018-5-9
+        1.
+
 2018-5-8   
         1.输入输出初始化 SoftGenSET012
         2.转速TIM3初始化 SoftGenSET013
-
-2018-5-5   SoftGenSET011
-        1.暂时查出问题出现在XIOConfigREMAP函数中，使用库函数中的    GPIO_PinRemapConfig替换
-
-
-2018-5-4  SoftGenSET01 - SoftGenSET011
-        1.基本按成端口引脚的配置，但是在SWD/JTAG重映像出问题，暂时测试问题
-
-2018-4-24	SoftGenSET01
-
-2018-4-24	SoftGenSET00
-	1.基础版本
+        3.ADC1配置，缺失ADC1_IN8 SoftGenSET014      需要配置ADC3_IN8
+        3.ADC3配置  SoftGenSET015      
+2018-5-5   
+        1.暂时查出问题出现在XIOConfigREMAP函数中，使用库函数中的GPIO_PinRemapConfig进行替换  SoftGenSET011
+2018-5-4  
+        1.基本按成端口引脚的配置，但是在SWD/JTAG重映像出问题，暂时测试问题  SoftGenSET01 - SoftGenSET011
+2018-4-24	
+        1.在基础版本上分配分配任务  SoftGenSET01
+2018-4-24	
+	1.基础版本  SoftGenSET00
 
 
 
