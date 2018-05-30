@@ -1,0 +1,18 @@
+#ifndef	_BTN_H
+#define	_BTN_H
+#include "PublicShare.h"
+#include "logic.h"
+#pragma DATA_SEG DEFAULT
+
+#define BTN_START        BTNVALUE.BITS.BIT0
+#define BTN_STOP         BTNVALUE.BITS.BIT1
+#define BTN_FAULT_RESET  BTNVALUE.BITS.BIT2
+#define BTN_HORN_RESET   BTNVALUE.BITS.BIT3
+#define BTN_STARTHOLD    BTNVALUE.BITS.BIT4
+#define BTN_STARTRELEASE BTNVALUE.BITS.BIT5
+#define BTN_SELFTEST_SDOUT  BTNVALUE.BITS.BIT6
+#define BTN_SELFTEST_SDNOUT BTNVALUE.BITS.BIT7
+PUBLIC void ButtonProcess(void);
+
+#endif
+

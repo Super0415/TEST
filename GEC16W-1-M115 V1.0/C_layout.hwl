@@ -1,0 +1,24 @@
+OPEN source 0 0 51 100
+Source:1 < attributes SHOW_CORE 0,TOOLTIP on,TOOLTIP_FORMAT signed,TOOLTIP_MODE details,FREEZE off,MARKS on
+OPEN source 50 0 50 87
+Source:2 < attributes SHOW_CORE 1,TOOLTIP on,TOOLTIP_FORMAT signed,TOOLTIP_MODE details,FREEZE off,MARKS on
+OPEN assembly 50 33 50 14
+Assembly < attributes SHOW_CORE 1,ADR off,CODE off,ABSADR on,SYMB off,FORMAT Auto,FREEZE off,TOPPC 0x0
+OPEN register 50 47 35 19
+Register < attributes SHOW_CORE 1,FORMAT AUTO,COMPLEMENT None
+OPEN procedure 85 47 15 19
+Procedure < attributes SHOW_CORE 1,VALUES on,TYPES off
+OPEN data 47 0 52 98
+Data:1 < attributes SHOW_CORE 0,SCOPE global,COMPLEMENT None,FORMAT Symb,MODE periodical,SORT NotSort,UPDATERATE 1,NAMEWIDTH 16
+OPEN data 50 23 43 19
+Data:2 < attributes SHOW_CORE 0,SCOPE local,COMPLEMENT None,FORMAT Symb,MODE automatic,SORT NotSort,UPDATERATE 10,NAMEWIDTH 16
+OPEN data 50 66 25 19
+Data:3 < attributes SHOW_CORE 1,SCOPE global,COMPLEMENT None,FORMAT Symb,MODE automatic,SORT NotSort,UPDATERATE 10,NAMEWIDTH 16
+OPEN data 75 66 25 19
+Data:4 < attributes SHOW_CORE 1,SCOPE local,COMPLEMENT None,FORMAT Symb,MODE automatic,SORT NotSort,UPDATERATE 10,NAMEWIDTH 16
+OPEN command 54 85 46 15
+Command < attributes CACHESIZE 1000
+bckcolor 50331647
+font 'Courier New' 9 BLACK
+AUTOSIZE on
+ACTIVATE "Assembly" "Procedure" "Register" "Command" "Data:3" "Data:4" "Data:2" "Source:2" "Source:1" "Data:1"

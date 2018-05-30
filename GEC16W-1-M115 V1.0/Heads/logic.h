@@ -1,0 +1,44 @@
+#include "PublicShare.h"
+#ifndef _LOGIC_H
+#define _LOGIC_H
+#pragma DATA_SEG DEFAULT
+PUBLIC void StatusCheck (void);
+PUBLIC void DES_STARTSTOP (void);
+PUBLIC void Protection (void);
+PUBLIC void ResetProcess (void);
+PUBLIC void ForceMode (uchar mode);
+PUBLIC void TransParams(void);
+PUBLIC void EXTEND_SEND (void);
+PUBLIC void ADJUST_SPEED(void);
+PUBLIC void TRANSMIT_CAN_DATA(void);
+PUBLIC void TRANSMIT_CAN_DATA_PARAM(void);
+#if FEIERTE_MODE
+PUBLIC void FET_BATT_PROTECTION(void);
+PUBLIC void FET_BATT_MANAGEMENT(void);
+PUBLIC void FET_PID_CONTROL(void);
+PUBLIC void FET_BATTCAP_CAL(void);
+#endif
+
+#if GEC16P_MODE
+PUBLIC void PS_LUBOILMAINTAIN(void);
+#endif
+PUBLIC void ECU6800_SENDLOAD (unsigned int NOWLOAD);
+PUBLIC void MCB_GCB_LOGIC (void);
+
+PUBLIC void AccumulationCalc(void);
+
+PUBLIC uchar ParamCheck(int ParamNum ,int Paramvalue);
+PUBLIC uint FET_SPEEDMODE_INTERVAL;
+PUBLIC uchar CHECKDELAY;
+PUBLIC uchar lastmode;
+PUBLIC STRFLG16 TMPFLG;
+PUBLIC uchar DISABLE_AUTOSTART;
+//PUBLIC FET_CHARGE_CURRENTMODE_SET;
+//PUBLIC FET_CHARGE_VOLTAGEMODE_SET;
+PUBLIC int FET_CHARGE_CURRENTLIMIT;
+PUBLIC int FET_CHARGE_VOLTAGELIMIT;
+PUBLIC int FET_CHARGE_F2B_CURRENT;
+//PUBLIC int FET_CHARGE_F2B_CAP;
+PUBLIC int FET_CHARGE_B2F_CURRENT;
+//PUBLIC int FET_CHARGE_B2F_CAP;
+#endif

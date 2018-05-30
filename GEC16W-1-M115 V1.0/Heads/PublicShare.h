@@ -1,0 +1,146 @@
+#ifndef __PUBLICSHARE_H_
+#define __PUBLICSHARE_H_
+
+#include <hidef.h>      /* common defines and macros */
+#include <MC9S12XET256.h>     /* derivative information */
+#include "pinout.h"
+#include "string.h"
+#include "extern.h"
+#include "defs.h"
+#include "math.h"
+#include "share.h"
+#include "main.h"
+#include "const.h"
+#pragma DATA_SEG DEFAULT
+extern volatile uchar D423MODE;
+extern volatile uchar D223MODE;
+
+PUBLIC volatile uchar MANSTART_FLAG;
+
+PUBLIC uchar SELF_TEST_BUZZER;
+
+PUBLIC uint CAN_PARAM_ADDRESS;
+PUBLIC int CAN_PARAM_NUM;
+PUBLIC uchar CAN_PARAM_SENDFLAG;
+PUBLIC uchar DI_NOSTOP;
+PUBLIC uchar REC_AUTOSTART;
+PUBLIC uchar DI_IDLE;
+PUBLIC PID_PAR_STR PID_PARAM;
+PUBLIC volatile int AO1PERCENT;
+PUBLIC volatile int AO2PERCENT;
+PUBLIC uchar DI[11];
+PUBLIC uchar DO[14];
+
+PUBLIC uint FREQCOUNT;
+PUBLIC uint FREQSET;
+PUBLIC uchar FREQCOMP;
+
+PUBLIC uchar SPLASH_500ms;
+PUBLIC STRFLG16 EXTERNOUTPUT;
+PUBLIC STRFLG8 EXTERNINPUT;
+
+PUBLIC int SHORTVALUE;
+PUBLIC uchar SHORTFLAG;
+PUBLIC uint SHORTCNT;
+PUBLIC uint SHORTCNTMAX;
+
+PUBLIC uchar SpeedError;
+PUBLIC uchar SpeedError2;
+PUBLIC uchar SpeedHigh2;
+PUBLIC uchar OilPressureLow2;
+PUBLIC uchar WTHI2;
+PUBLIC uchar OTHI2;
+PUBLIC int MODBUS_DATA[200];
+PUBLIC volatile int Params[250];
+PUBLIC uchar CANWRITE;
+PUBLIC uchar EnWriteTime;
+PUBLIC uchar SendBuff[200];
+PUBLIC uchar PARAMSBUFF[];
+
+PUBLIC volatile float AIFACT1;
+PUBLIC volatile float AIFACT2;
+PUBLIC volatile float AIFACT3;
+PUBLIC volatile float AIFACT4;
+PUBLIC volatile float AIFACT5;
+PUBLIC volatile float AIFACT6;
+PUBLIC volatile float AIFACT7;
+PUBLIC volatile float AIFACT8;
+PUBLIC volatile float AIFACT9;
+PUBLIC volatile float BATTFACT;
+PUBLIC volatile float CHARGEFACT;
+PUBLIC volatile float GENPT;
+PUBLIC volatile float MAINPT;
+PUBLIC volatile float GENVOLTFACT;
+PUBLIC int TMPDATA;
+PUBLIC volatile  int KWALL100;
+PUBLIC volatile long AI0;
+PUBLIC volatile long AI1;
+PUBLIC volatile long AI2;
+PUBLIC float ADJUST1;
+PUBLIC float ADJUST2;
+PUBLIC float ADJUST3;
+PUBLIC uchar ECUMODE;
+PUBLIC volatile uint FUELAVG;
+PUBLIC uchar INPUT_TEMP[50];
+PUBLIC uchar OUTPUT_TEMP[50];
+PUBLIC uchar NowMode;
+PUBLIC STRFLG8 GENALA;
+PUBLIC STRFLG8 GENALA2;
+PUBLIC STRFLG8 BUSALA;
+PUBLIC STRFLG8 DESALA;
+PUBLIC STRFLG8 DESALA2;
+PUBLIC STRFLG8 DESALA3;
+PUBLIC STRFLG8 DESALA4;
+PUBLIC STRFLG8 DES_STATUS;
+PUBLIC STRFLG8 DES_STATUS2;
+PUBLIC STRFLG8 GEN_STATUS;
+PUBLIC STRFLG8 BUS_STATUS;
+PUBLIC STRFLG8 ECU_STATUS;
+PUBLIC STRFLG8 ECU_STATUS2;
+PUBLIC STRFLG8 HWALA;
+PUBLIC STRFLG8 HWALA2;
+PUBLIC STRFLG8 DESALAMASK;
+PUBLIC STRFLG8 DESALA2MASK;
+PUBLIC STRFLG8 DESALA3MASK;
+PUBLIC STRFLG8 GENALAMASK;
+PUBLIC STRFLG8 BUSALAMASK;
+PUBLIC STRFLG8 HWALAMASK;
+PUBLIC uchar NOBUZZER;
+PUBLIC float FreqArr[4];
+PUBLIC long AI_R0;
+PUBLIC long AI_R1;
+PUBLIC long AI_R2;
+PUBLIC long AI_ADVALUE[AI_NUM];
+PUBLIC long AI_OHM[AI_NUM];
+PUBLIC float ADJUST[AI_NUM];
+PUBLIC STRFLG8 PROTECT_FLAG;
+PUBLIC uchar CHECKDELAY;
+PUBLIC uchar ALARMSTOP;
+PUBLIC uchar FET_ENSTART;
+PUBLIC uchar TIMERSTART;
+PUBLIC uchar BATTSTART;
+
+#pragma push
+#pragma DATA_SEG __EPAGE_SEG EEE_PAGED_FE
+PUBLIC uchar PARAMS_EEE[];
+#pragma pop
+
+#pragma push
+#pragma DATA_SEG __EPAGE_SEG EEE_PAGED_FC
+PUBLIC uchar RECORD_P1_EEE;
+#pragma pop
+
+#pragma push
+#pragma DATA_SEG __EPAGE_SEG EEE_PAGED_FD
+PUBLIC uchar RECORD_P2_EEE;
+#pragma pop
+
+#pragma push
+#pragma DATA_SEG __EPAGE_SEG EEE_PAGED_FF
+PUBLIC uchar RECORD_P3_EEE;
+#pragma pop
+
+
+
+
+#endif

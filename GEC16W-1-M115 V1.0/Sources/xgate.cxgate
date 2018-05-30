@@ -1,0 +1,710 @@
+//#include <hidef.h>      /* common defines and macros */
+#include "PublicShare.h"
+#include "ai.h"
+#include "xgate.h"
+
+
+#define MASK_5MS          5
+#define MASK_10MS         10
+#define MASK_20MS         20
+#define MASK_50MS         50
+#define MASK_100MS        100
+#define MASK_200MS        200
+#define F_FREQ_MAINS  F_FREQ.BITS.BIT0
+#define F_FREQ_GENS   F_FREQ.BITS.BIT1
+#define F_FREQ_MP     F_FREQ.BITS.BIT2
+#define P_FREQ_GENS   0
+#define P_FREQ_MAINS  1
+#define P_FREQ_MP     2
+#define MAX_FREQ_BUF  3
+PRIVATE uchar cnt_5ms   = 1;
+PRIVATE uchar cnt_10ms  = 2;
+PRIVATE uchar cnt_20ms  = 4;
+PRIVATE uchar cnt_50ms  = 6;
+PRIVATE uchar cnt_100ms = 8;
+PRIVATE uchar cnt_200ms = 10;
+PRIVATE uchar cnt_500ms;
+PRIVATE uchar cnt_1s;
+
+    
+PRIVATE uint freq_mp_cnt;
+PRIVATE STRFLG8 F_FREQ;
+
+PRIVATE uint  freq_buf[3][MAX_FREQ_BUF];
+
+unsigned char TESTSET;
+
+// put your handler variables here
+typedef struct {
+  int counter;
+} MyDataType;
+
+static MyDataType MyData= {
+  0
+};
+
+#pragma push
+#pragma CODE_SEG XGATE_CODE_RAM
+
+//************************************************************************************
+//函数名称：  xgate_average
+//功能描述：  average of the array, abandon the maxim and the min number
+//输入参数：  point to array, length of array
+//输出参数：
+//************************************************************************************
+
+PRIVATE uint xgate_average(uint *pdata, uchar len_buf)
+{
+    uint  low_buf;
+    uint  hi_buf;
+    ulong sum_buf;
+    uchar cnt_buf;
+    uint  average_buf;
+    uint  *p_buf;
+    p_buf = pdata;
+    low_buf = *p_buf;
+    hi_buf  = *p_buf;
+    for(cnt_buf=0; cnt_buf<(len_buf-1); cnt_buf++) //find maxim and min number
+    {
+        p_buf++;
+        if(low_buf > *p_buf)
+        {
+            low_buf = *p_buf;
+        }
+        if(hi_buf < *p_buf)
+        {
+            hi_buf = *p_buf;
+        }
+    }
+    sum_buf = 0;
+    p_buf = pdata;    //notice????
+    for(cnt_buf=0; cnt_buf<len_buf; cnt_buf++)  //sum
+    {
+        sum_buf += *p_buf++;
+    }
+    average_buf = ((sum_buf- low_buf - hi_buf) / (len_buf - 2));
+    return average_buf;
+}
+//************************************************************************************
+//函数名称：  xgate_pushdata
+//功能描述：  push data, abandon the oldest and push the newest data into array
+//输入参数：  point to array, length of array
+//输出参数：
+//************************************************************************************
+PRIVATE void xgate_pushdata(uint *pdata, uint buf)
+{
+  uchar i;
+  for(i=0; i<(MAX_FREQ_BUF -1); i++)
+  {
+    *pdata = *(pdata + 1);
+    pdata++;
+  }
+  *pdata = buf;
+}
+//************************************************************************************
+//函数名称：  xgate_freq_measure
+//功能描述：  measuring MAINS frequency
+//输入参数：
+//输出参数：
+//************************************************************************************
+PRIVATE void xgate_freq_measure(uchar chn, uint temp, uint *pdata, uchar divid)
+{  
+  #if 1
+  ulong x = 0;
+  x = ovf_buf[chn];
+  ovf_buf[chn] = 0;
+  x = x * 65536;
+  x = x + temp - freq_pre_buf[chn];
+  x = ((500000000 /x) + 5)/divid;
+  //freq_pre_buf[chn] = temp;  
+  xgate_pushdata(freq_buf[chn], x);
+  *pdata = xgate_average(freq_buf[chn], MAX_FREQ_BUF);
+  
+  if((chn == P_FREQ_MAINS) || (chn == P_FREQ_GENS))
+  {
+    PITLD1 = ((50000000 / (*pdata * 64)) - 1);
+  }
+  
+  #endif
+ }
+
+//************************************************************************************
+//函数名称：  ISR_SCI4()
+//功能描述：  SCI4 process routine
+//输入参数：
+//输出参数：
+//************************************************************************************
+
+interrupt void ISR_SCI0(void)
+{
+   // (void)SCI0SR1;        // read the status register - required to clear the int flag
+   uchar tmp;
+    RXcomplete1 = 0;
+    if(SCI0SR1_RDRF)
+    {
+        if(RXpt1<100)
+        {
+          
+        ReceiveBuff1[RXpt1] = SCI0DRL;
+        RXpt1++;
+        }
+        CommTimeOut1 = 0;
+        tmp=SCI0DRL;
+    }
+}
+
+interrupt void ISR_SCI1(void)
+{
+   // (void)SCI1SR1;        // read the status register - required to clear the int flag
+    uchar tmp;
+    RXcomplete2 = 0;
+    if(SCI1SR1_RDRF)
+    {
+        if(RXpt2<200)
+        {
+          
+        ReceiveBuff2[RXpt2] = SCI1DRL;
+        RXpt2++;
+        }
+        CommTimeOut2 = 0;
+        tmp=SCI1DRL;
+    }
+}
+
+
+interrupt void ISR_SCI4(void)
+{
+  (void)SCI4SR1;        // read the status register - required to clear the int flag
+  SCI4DRL = SCI4DRL;
+  while(!SCI4SR1_TDRE);
+  SCI4DRL='|';
+}
+
+
+
+
+
+
+
+// interrupt handler
+interrupt void SoftwareTrigger0_Handler(MyDataType* __restrict pData) {
+  
+  // put your own code here
+  pData->counter++;
+  if (pData->counter > 100)  {
+    pData->counter= 0; 
+    shared_counter++;
+  }
+}
+
+//************************************************************************************
+//函数名称：  ISR_ATD0()
+//功能描述：  anolog-to-digital convert interrupt routine
+//输入参数：
+//输出参数：
+//************************************************************************************
+interrupt void ISR_ATD0(void)
+{
+  atd_scf_clr();
+
+}
+
+
+//************************************************************************************
+//函数名称：  ISR_PIT0()
+//功能描述：  PIT channel 0 overflow interrupt routine
+//输入参数：
+//输出参数：
+//************************************************************************************
+interrupt void ISR_PIT0(void)
+{ 
+  uchar i; 
+  PITTF_PTF0=1;
+  cnt_5ms++;
+  cnt_10ms++;
+  cnt_20ms++;
+  cnt_50ms++;
+  cnt_100ms++;
+  cnt_200ms++;
+ // BUZ  ^= 1;
+  if(cnt_5ms  >= MASK_5MS)
+  {
+    schedule_5ms = 1;
+    cnt_5ms   = 0;
+  }
+  if(cnt_10ms >= MASK_10MS)
+  {
+    schedule_10ms    = 1;
+    cnt_10ms  = 0; 
+  }
+  if(cnt_20ms >= MASK_20MS)
+  {
+    schedule_20ms    = 1;
+    cnt_20ms  = 0; 
+  }
+  if(cnt_50ms >= MASK_50MS)
+  {
+    schedule_50ms    = 1;
+    cnt_50ms  = 0; 
+  }
+  if(cnt_100ms >= MASK_100MS)
+  {
+  
+    schedule_100ms   = 1;
+    if(TimerEnArr[30]==0)
+    {
+    TESTSET=1;
+    }
+     for (i = 0; i < TMRNUM; i++)   //对定时器数组进行累加计算
+    {
+        if (TimerEnArr[i] == 1)
+        {
+            //如果定时器使能
+            if(!(TimerMode[i]==0 && TimerTrig[i]))
+            {              
+                TimerValue[i]++;
+            }
+            if (TimerValue[i] >= TimerSet[i])
+            {
+                if (TimerMode[i] <= 1)
+                {
+                    TimerValue[i] = 0;
+                    TimerEnArr[i] = TimerMode[i];
+                }
+                else
+                {
+                    TimerEnArr[i] = 0;
+                }
+
+                TimerTrig[i] = 1;
+            }
+        }
+        else
+        {
+            if(TimerMode[i]!=2)
+            {          
+                TimerValue[i] = 0;
+            }
+        }
+    }
+
+    cnt_100ms = 0; 
+    cnt_500ms++;
+   
+   
+   
+   
+    if(cnt_500ms >= 5)
+    {
+      schedule_500ms  = 1;
+      cnt_500ms       = 1;      
+    }
+  }
+  if(cnt_200ms >= MASK_200MS)
+  {
+    schedule_200ms   = 1;
+    cnt_1s++;
+    if(cnt_1s >= 5)
+    {
+      schedule_1s  = 1;
+      cnt_1s = 0;
+    }
+    cnt_200ms = 0; 
+  }
+}
+
+
+//************************************************************************************
+//函数名称：  ISR_PIT1()
+//功能描述：  generate timer for atd
+//输入参数：
+//输出参数：
+//************************************************************************************
+interrupt void ISR_PIT1(void)
+{
+
+
+
+   PITTF_PTF1 = 1;
+
+}
+
+#if PCB16W
+#define CHAI0    ATD0DR9
+#define CHAI1    ATD0DR3
+#define CHAI2    ATD0DR4
+#define CHAI3    ATD0DR5
+#define CHAI4    ATD0DR10
+#define CHAI5    ATD0DR2
+#define CHAI6    ATD0DR6
+#define CHAI7    ATD0DR7
+#define CHAI8    ATD0DR8
+#define CHAI9    ATD0DR1
+#define CHAISPD  ATD0DR15
+
+#endif
+
+#if PCB16DW
+#define CHAI0    ATD0DR4
+#define CHAI1    ATD0DR12
+#define CHAI2    ATD0DR5
+#define CHAI3    ATD0DR13
+#define CHAI4    ATD0DR6
+#define CHAI5    ATD0DR14
+#define CHAI6    ATD0DR7
+#define CHAI7    ATD0DR15
+
+#define CHAI8    ATD0DR11
+#define CHAI9    ATD0DR10
+#define CHAISPD  ATD0DR9
+#endif
+
+interrupt void ISR_PIT2(void)
+{
+  uchar i=0;
+  PITTF_PTF2 = 1;
+   #if B_MODE
+   if(FFTNUM<10)
+   {    
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI0;
+           i++;
+       }
+       
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI1;
+           i++;
+       }   
+           
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI2;
+           i++;
+       }         
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI3;
+           i++;
+       }  
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI4;
+           i++;
+       }          
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI5;
+           i++;
+       }  
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI6;
+           i++;
+       }  
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI7;
+           i++;
+       }
+       
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI8;
+           i++;
+       }
+       
+       if(i<AI_NUM)
+       {    
+           DataArrAI[i]+=CHAI9;
+           i++;
+       }         
+
+       FFTNUM++;
+       SPEEDADVALUE= CHAISPD;
+   }
+   
+   if(FFTNUM>=10)
+   {
+       PITINTE_PINTE2=0;
+   }
+   #endif           
+
+   
+
+   
+     
+    
+     
+}
+
+
+interrupt void ISR_ECT_OVF()
+{
+  ECT_TFLG2_TOF=1;
+  ovf_buf[P_FREQ_GENS]++;
+  ovf_buf[P_FREQ_MAINS]++;
+  
+  //if(MPCHECKED==0)
+  //{    
+      ovf_buf[P_FREQ_MP]++;        
+  //}
+  
+  if(ovf_buf[P_FREQ_GENS] > 210)
+  {
+    gen_freq = 0;
+  }
+  if(ovf_buf[P_FREQ_MAINS] > 210)
+  {
+    mains_freq = 0;
+  }
+  if(ovf_buf[P_FREQ_MP] > 100)
+  {
+    MPTEST      = 0;
+    freq_mp_cnt = 0;
+  }
+}
+
+
+interrupt void ISR_ECT_MP()
+{
+  /*
+  ulong buf;
+  ECT_TFLG1_C0F = 1;
+  freq_mp_cnt++;
+  
+  if(F_FREQ_MP)
+  {    
+     
+     if(ovf_buf[P_FREQ_MP] >= 2)
+     //if(freq_mp_cnt>=1)     
+     { 
+        ECT_TIE_C0I=0;
+        temp_buf_mp = ECT_TC0;
+        //buf = 65535*(ulong)ovf_buf[P_FREQ_MP];
+        //FREQ_MP = buf + (ulong)temp_buf - freq_pre_buf[P_FREQ_MP];
+        
+        //FREQ_MP = 5000000  * (float)freq_mp_cnt*60/buf/(float)DES_ROTATIONSCALE;        
+        MPCHECKED=1;
+        //ovf_buf[P_FREQ_MP] = 0;
+        F_FREQ_MP = 0;
+        freq_mp_cnt=0;
+        //ECT_TIE_C0I=1;
+     }
+  }
+  else
+  {
+    ECT_TC0=0;
+    freq_pre_buf[P_FREQ_MP] = ECT_TC0;
+    ovf_buf[P_FREQ_MP]      = 0;
+    freq_mp_cnt  = 0;
+    F_FREQ_MP = 1; 
+  }
+
+   */
+   
+  uint temp_buf;      
+  ECT_TFLG1_C0F = 1;
+  if(F_FREQ_MP)
+  {
+    ECT_TIE_C0I = 0;
+    temp_buf = ECT_TC0;
+    F_FREQ_MP = 0;
+    //MPTEST=65536*ovf_buf[2] + temp_buf - freq_pre_buf[2];
+    xgate_freq_measure(2, temp_buf, &MPTEST, 10);
+    ECT_TIE_C0I = 1;
+  }
+  else
+  {
+    freq_pre_buf[P_FREQ_MP] = ECT_TC0;
+    ovf_buf[P_FREQ_MP] = 0;
+    F_FREQ_MP = 1;
+  }
+  
+
+
+
+}
+
+interrupt void ISR_ECT_F1()
+{
+    uint temp_buf;
+    //ECT_TFLG1_C1F = 1;
+   
+    ECT_TFLG1_C2F = 1;
+  if(F_FREQ_GENS)
+  {
+    ECT_TIE_C2I = 0;
+    temp_buf = ECT_TC2;
+    F_FREQ_GENS = 0;
+    xgate_freq_measure(P_FREQ_GENS, temp_buf, &gen_freq, 10);
+    ECT_TIE_C2I = 1;
+  }
+  else
+  {
+    freq_pre_buf[P_FREQ_GENS] = ECT_TC2;
+    ovf_buf[P_FREQ_GENS] = 0;
+    F_FREQ_GENS = 1;
+  }
+
+}
+
+
+interrupt void ISR_ECT_F2()
+{
+
+  uint temp_buf;
+  ECT_TFLG1_C3F = 1;  
+  if(F_FREQ_MAINS)
+  {
+    ECT_TIE_C3I = 0;
+    temp_buf = ECT_TC3;
+    F_FREQ_MAINS = 0;
+    xgate_freq_measure(P_FREQ_MAINS, temp_buf, &mains_freq,10);
+    ECT_TIE_C3I = 1;
+  }
+  else
+  {
+    freq_pre_buf[P_FREQ_MAINS] = ECT_TC3;
+    ovf_buf[P_FREQ_MAINS]  = 0;    
+    F_FREQ_MAINS = 1;
+  }
+  
+}
+#pragma pop
+
+
+
+// interrupt handler for all others
+interrupt void ErrorHandler(int dataptr) 
+{
+  int chanNum= dataptr;
+  asm BRK;
+}
+
+#pragma CONST_SEG XGATE_VECTORS  /* assign the vector table in separate segment for dedicated placement in linker parameter file */
+
+const XGATE_TableEntry XGATE_VectorTable[] = {
+                         // Channel # = Vector address / 2
+  /* channel 0..8 are not used, first used must match macro XGATE_VECTOR_OFFSET in xgate.h */
+  {ErrorHandler, 0x09},  // Channel 09 - Reserved
+  {ErrorHandler, 0x0A},  // Channel 0A - Reserved
+  {ErrorHandler, 0x0B},  // Channel 0B - Reserved
+  {ErrorHandler, 0x0C},  // Channel 0C - Reserved
+  {ErrorHandler, 0x0D},  // Channel 0D - Reserved
+  {ErrorHandler, 0x0E},  // Channel 0E - Reserved
+  {ErrorHandler, 0x0F},  // Channel 0F - Reserved
+  {ErrorHandler, 0x10},  // Channel 10 - Reserved
+  {ErrorHandler, 0x11},  // Channel 11 - Reserved
+  {ErrorHandler, 0x12},  // Channel 12 - Reserved
+  {ErrorHandler, 0x13},  // Channel 13 - Reserved
+  {ErrorHandler, 0x14},  // Channel 14 - Reserved
+  {ErrorHandler, 0x15},  // Channel 15 - Reserved
+  {ErrorHandler, 0x16},  // Channel 16 - Reserved
+  {ErrorHandler, 0x17},  // Channel 17 - Reserved
+  {ErrorHandler, 0x18},  // Channel 18 - Reserved
+  {ErrorHandler, 0x19},  // Channel 19 - Reserved
+  {ErrorHandler, 0x1A},  // Channel 1A - Reserved
+  {ErrorHandler, 0x1B},  // Channel 1B - Reserved
+  {ErrorHandler, 0x1C},  // Channel 1C - Reserved
+  {ErrorHandler, 0x1D},  // Channel 1D - Reserved
+  {ErrorHandler, 0x1E},  // Channel 1E - Reserved
+  {ErrorHandler, 0x1F},  // Channel 1F - Reserved
+  {ErrorHandler, 0x20},  // Channel 20 - Reserved
+  {ErrorHandler, 0x21},  // Channel 21 - Reserved
+  {ErrorHandler, 0x22},  // Channel 22 - Reserved
+  {ErrorHandler, 0x23},  // Channel 23 - Reserved
+  {ErrorHandler, 0x24},  // Channel 24 - Reserved
+  {ErrorHandler, 0x25},  // Channel 25 - Reserved
+  {ErrorHandler, 0x26},  // Channel 26 - Reserved
+  {ErrorHandler, 0x27},  // Channel 27 - Reserved
+  {ErrorHandler, 0x28},  // Channel 28 - Reserved
+  {ErrorHandler, 0x29},  // Channel 29 - Reserved
+  {ErrorHandler, 0x2A},  // Channel 2A - Reserved
+  {ErrorHandler, 0x2B},  // Channel 2B - Reserved
+  {ErrorHandler, 0x2C},  // Channel 2C - Reserved
+  {ErrorHandler, 0x2D},  // Channel 2D - Reserved
+  {ErrorHandler, 0x2E},  // Channel 2E - Reserved
+  {ErrorHandler, 0x2F},  // Channel 2F - Reserved
+  {ErrorHandler, 0x30},  // Channel 30 - XSRAM20K Access Violation
+  {ErrorHandler, 0x31},  // Channel 31 - XGATE Software Error Interrupt     
+  {ErrorHandler, 0x32},  // Channel 32 - XGATE Software Trigger 7           
+  {ErrorHandler, 0x33},  // Channel 33 - XGATE Software Trigger 6           
+  {ErrorHandler, 0x34},  // Channel 34 - XGATE Software Trigger 5           
+  {ErrorHandler, 0x35},  // Channel 35 - XGATE Software Trigger 4           
+  {ErrorHandler, 0x36},  // Channel 36 - XGATE Software Trigger 3           
+  {ErrorHandler, 0x37},  // Channel 37 - XGATE Software Trigger 2           
+  {ErrorHandler, 0x38},  // Channel 38 - XGATE Software Trigger 1           
+  {(XGATE_Function)SoftwareTrigger0_Handler, (int)&MyData},  // Channel 39 - XGATE Software Trigger 0       
+  {ErrorHandler, 0x3A},  // Channel 3A - Periodic Interrupt Timer           
+  //{ErrorHandler, 0x3B},  // Channel 3B - Periodic Interrupt Timer           
+  {(XGATE_Function)ISR_PIT2, 0x3B},  // Channel 3C - Periodic Interrupt Timer     
+  {(XGATE_Function)ISR_PIT1, 0x3C},  // Channel 3C - Periodic Interrupt Timer           
+  {(XGATE_Function)ISR_PIT0, 0x3D},  // Channel 3D - Periodic Interrupt Timer           
+  {ErrorHandler, 0x3E},  // Channel 3E - Reserved                           
+  {ErrorHandler, 0x3F},  // Channel 3F - Autonomous Periodical interrupt API
+  {ErrorHandler, 0x40},  // Channel 40 - Low Voltage interrupt LVI
+  {ErrorHandler, 0x41},  // Channel 41 - IIC1 Bus                 
+  {ErrorHandler, 0x42},  // Channel 42 - SCI5                     
+  //{ErrorHandler, 0x43},  // Channel 43 - SCI4                     
+  {(XGATE_Function)ISR_SCI4, (int) (void*)0},  // Channel 43 - SCI4  
+  {ErrorHandler, 0x44},  // Channel 44 - SCI3                     
+  {ErrorHandler, 0x45},  // Channel 45 - SCI2                     
+  {ErrorHandler, 0x46},  // Channel 46 - PWM Emergency Shutdown   
+  {ErrorHandler, 0x47},  // Channel 47 - Port P Interrupt         
+  {ErrorHandler, 0x48},  // Channel 48 - CAN4 transmit            
+  {ErrorHandler, 0x49},  // Channel 49 - CAN4 receive             
+  {ErrorHandler, 0x4A},  // Channel 4A - CAN4 errors              
+  {ErrorHandler, 0x4B},  // Channel 4B - CAN4 wake-up             
+  {ErrorHandler, 0x4C},  // Channel 4C - CAN3 transmit            
+  {ErrorHandler, 0x4D},  // Channel 4D - CAN3 receive             
+  {ErrorHandler, 0x4E},  // Channel 4E - CAN3 errors              
+  {ErrorHandler, 0x4F},  // Channel 4F - CAN3 wake-up             
+  {ErrorHandler, 0x50},  // Channel 50 - CAN2 transmit
+  {ErrorHandler, 0x51},  // Channel 51 - CAN2 receive 
+  {ErrorHandler, 0x52},  // Channel 52 - CAN2 errors  
+  {ErrorHandler, 0x53},  // Channel 53 - CAN2 wake-up 
+  {ErrorHandler, 0x54},  // Channel 54 - CAN1 transmit
+  {ErrorHandler, 0x55},  // Channel 55 - CAN1 receive 
+  {ErrorHandler, 0x56},  // Channel 56 - CAN1 errors  
+  {ErrorHandler, 0x57},  // Channel 57 - CAN1 wake-up 
+  {ErrorHandler, 0x58},  // Channel 58 - CAN0 transmit
+  {ErrorHandler, 0x59},  // Channel 59 - CAN0 receive 
+  {ErrorHandler, 0x5A},  // Channel 5A - CAN0 errors  
+  {ErrorHandler, 0x5B},  // Channel 5B - CAN0 wake-up 
+  {ErrorHandler, 0x5C},  // Channel 5C - FLASH 
+  {ErrorHandler, 0x5D},  // Channel 5D - EEPROM
+  {ErrorHandler, 0x5E},  // Channel 5E - SPI2  
+  {ErrorHandler, 0x5F},  // Channel 5F - SPI1
+  {ErrorHandler, 0x60},  // Channel 60 - IIC0 Bus                         
+  {ErrorHandler, 0x61},  // Channel 61 - Reserved                         
+  {ErrorHandler, 0x62},  // Channel 62 - CRG Self Clock Mode              
+  {ErrorHandler, 0x63},  // Channel 63 - CRG PLL lock                     
+  {ErrorHandler, 0x64},  // Channel 64 - Pulse Accumulator B Overflow     
+  {ErrorHandler, 0x65},  // Channel 65 - Modulus Down Counter underflow   
+  {ErrorHandler, 0x66},  // Channel 66 - Port H                           
+  {ErrorHandler, 0x67},  // Channel 67 - Port J                           
+  {ErrorHandler, 0x68},  // Channel 68 - ATD1                             
+  //{ErrorHandler, 0x69},  // Channel 68 - ATD0 
+  {(XGATE_Function)ISR_ATD0, 0x69},  // Channel 69 - ATD0                             
+  //{ErrorHandler, 0x6A},  // Channel 6A - SCI1                             
+  //{ErrorHandler, 0x6B},  // Channel 6B - SCI0 
+  {(XGATE_Function)ISR_SCI1, (int) (void*)0},  // Channel 43 - SCI4 
+  {(XGATE_Function)ISR_SCI0, (int) (void*)0},  // Channel 43 - SCI4                             
+  {ErrorHandler, 0x6C},  // Channel 6C - SPI0                             
+  {ErrorHandler, 0x6D},  // Channel 6D - Pulse accumulator input edge     
+  {ErrorHandler, 0x6E},  // Channel 6E - Pulse accumulator A overflow     
+  //{ErrorHandler, 0x6F},  // Channel 6F - Enhanced Capture Timer overflow  
+  {(XGATE_Function)ISR_ECT_OVF, 0x6F},  // Channel 6F - Enhanced Capture Timer overflow 
+  {ErrorHandler, 0x70},  // Channel 70 - Enhanced Capture Timer channel 7                                 
+  {ErrorHandler, 0x71},  // Channel 71 - Enhanced Capture Timer channel 6 
+  {ErrorHandler, 0x72},  // Channel 72 - Enhanced Capture Timer channel 5 
+  {ErrorHandler, 0x73},  // Channel 73 - Enhanced Capture Timer channel 4 
+  {(XGATE_Function)ISR_ECT_F2, 0x74},  // Channel 74 - Enhanced Capture Timer channel 3 
+  {(XGATE_Function)ISR_ECT_F1, 0x75},  // Channel 75 - Enhanced Capture Timer channel 2 
+  {ErrorHandler, 0x76},  // Channel 76 - Enhanced Capture Timer channel 1 
+  {(XGATE_Function)ISR_ECT_MP, 0x77},  // Channel 77 - Enhanced Capture Timer channel 0 
+  {ErrorHandler, 0x78},  // Channel 78 - Real Time Interrupt 
+  {ErrorHandler, 0x79},  // Channel 79 - IRQ
+};
