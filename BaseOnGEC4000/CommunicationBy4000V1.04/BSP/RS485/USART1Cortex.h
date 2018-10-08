@@ -42,7 +42,7 @@ USART1_EXT INT08U USART1RxByteCnt;    //485接收数据长度计数
 
 
 USART1_EXT void USART485_DataInit(void);
-USART1_EXT void USART485_Init(void);
+USART1_EXT void USART1_Init(void);
 USART1_EXT void USART485_Tim2_Init(void);
 USART1_EXT void TIM2_NVIC_Configuration(void);
 USART1_EXT void TIM2_Configuration(void);

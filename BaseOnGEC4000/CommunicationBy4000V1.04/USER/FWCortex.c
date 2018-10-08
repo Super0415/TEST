@@ -34,7 +34,7 @@ int main (void)
 //    #endif
     #ifdef FW_TASK_PRIO_SCI1
 //    (void)SCI1Init();                        /* Initialize SCI1 Model   */
-    USART485_Init();
+    USART1_Init();
 	  USART485_DataInit();
     USART485_Tim2_Init();	
     #endif
