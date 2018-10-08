@@ -1,0 +1,17 @@
+.\objects\lcdgetp.o: ucGUI\Core\LCDGetP.c
+.\objects\lcdgetp.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lcdgetp.o: ucGUI\Core\GUI_Private.h
+.\objects\lcdgetp.o: ucGUI\Core\GUI_Protected.h
+.\objects\lcdgetp.o: ucGUI\Core\GUI.h
+.\objects\lcdgetp.o: ucGUI\Core\GUI_ConfDefaults.h
+.\objects\lcdgetp.o: .\ucGUI\Config\GUIConf.h
+.\objects\lcdgetp.o: ucGUI\Core\GUIType.h
+.\objects\lcdgetp.o: ucGUI\Core\LCD.h
+.\objects\lcdgetp.o: ucGUI\Core\GUIVersion.h
+.\objects\lcdgetp.o: ucGUI\Core\LCD_Protected.h
+.\objects\lcdgetp.o: ucGUI\Core\GUIDebug.h
+.\objects\lcdgetp.o: ucGUI\Core\GUI_X.h
+.\objects\lcdgetp.o: .\ucGUI\WM\WM_GUI.h
+.\objects\lcdgetp.o: ucGUI\Core\LCD_Private.h
+.\objects\lcdgetp.o: ucGUI\Core\LCD_ConfDefaults.h
+.\objects\lcdgetp.o: .\ucGUI\Config\LCDConf.h

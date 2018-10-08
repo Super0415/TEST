@@ -1,0 +1,12 @@
+.\objects\lcdinfo0.o: ucGUI\Core\LCDInfo0.c
+.\objects\lcdinfo0.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lcdinfo0.o: ucGUI\Core\LCD.h
+.\objects\lcdinfo0.o: ucGUI\Core\GUI_ConfDefaults.h
+.\objects\lcdinfo0.o: .\ucGUI\Config\GUIConf.h
+.\objects\lcdinfo0.o: ucGUI\Core\LCD_Private.h
+.\objects\lcdinfo0.o: ucGUI\Core\LCD_ConfDefaults.h
+.\objects\lcdinfo0.o: .\ucGUI\Config\LCDConf.h
+.\objects\lcdinfo0.o: ucGUI\Core\LCD_Protected.h
+.\objects\lcdinfo0.o: ucGUI\Core\GUI.h
+.\objects\lcdinfo0.o: ucGUI\Core\GUIType.h
+.\objects\lcdinfo0.o: ucGUI\Core\GUIVersion.h

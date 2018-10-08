@@ -1,0 +1,17 @@
+.\objects\jdmarker.o: ucGUI\JPEG\jdmarker.c
+.\objects\jdmarker.o: ucGUI\JPEG\jinclude.h
+.\objects\jdmarker.o: ucGUI\JPEG\jconfig.h
+.\objects\jdmarker.o: .\ucGUI\Core\GUI.h
+.\objects\jdmarker.o: .\ucGUI\Core\GUI_ConfDefaults.h
+.\objects\jdmarker.o: .\ucGUI\Config\GUIConf.h
+.\objects\jdmarker.o: .\ucGUI\Core\GUIType.h
+.\objects\jdmarker.o: .\ucGUI\Core\LCD.h
+.\objects\jdmarker.o: .\ucGUI\Core\GUIVersion.h
+.\objects\jdmarker.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\jdmarker.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\jdmarker.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\jdmarker.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\jdmarker.o: ucGUI\JPEG\jpeglib.h
+.\objects\jdmarker.o: ucGUI\JPEG\jmorecfg.h
+.\objects\jdmarker.o: ucGUI\JPEG\jpegint.h
+.\objects\jdmarker.o: ucGUI\JPEG\jerror.h

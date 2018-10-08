@@ -1,0 +1,13 @@
+.\objects\gui2dlib.o: ucGUI\Core\GUI2DLib.c
+.\objects\gui2dlib.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\gui2dlib.o: ucGUI\Core\GUI_Protected.h
+.\objects\gui2dlib.o: ucGUI\Core\GUI.h
+.\objects\gui2dlib.o: ucGUI\Core\GUI_ConfDefaults.h
+.\objects\gui2dlib.o: .\ucGUI\Config\GUIConf.h
+.\objects\gui2dlib.o: ucGUI\Core\GUIType.h
+.\objects\gui2dlib.o: ucGUI\Core\LCD.h
+.\objects\gui2dlib.o: ucGUI\Core\GUIVersion.h
+.\objects\gui2dlib.o: ucGUI\Core\LCD_Protected.h
+.\objects\gui2dlib.o: ucGUI\Core\GUIDebug.h
+.\objects\gui2dlib.o: ucGUI\Core\GUI_X.h
+.\objects\gui2dlib.o: .\ucGUI\WM\WM_GUI.h

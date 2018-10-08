@@ -1,0 +1,16 @@
+.\objects\gui_array.o: ucGUI\Widget\GUI_ARRAY.c
+.\objects\gui_array.o: ucGUI\Widget\GUI_ARRAY.h
+.\objects\gui_array.o: .\ucGUI\WM\WM_Intern.h
+.\objects\gui_array.o: .\ucGUI\WM\WM.h
+.\objects\gui_array.o: .\ucGUI\Core\GUI_ConfDefaults.h
+.\objects\gui_array.o: .\ucGUI\Config\GUIConf.h
+.\objects\gui_array.o: .\ucGUI\Core\GUIType.h
+.\objects\gui_array.o: .\ucGUI\Core\LCD.h
+.\objects\gui_array.o: .\ucGUI\WM\WM_GUI.h
+.\objects\gui_array.o: .\ucGUI\Core\GUI_Protected.h
+.\objects\gui_array.o: .\ucGUI\Core\GUI.h
+.\objects\gui_array.o: .\ucGUI\Core\GUIVersion.h
+.\objects\gui_array.o: .\ucGUI\Core\LCD_Protected.h
+.\objects\gui_array.o: .\ucGUI\Core\GUIDebug.h
+.\objects\gui_array.o: .\ucGUI\Core\GUI_X.h
+.\objects\gui_array.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h

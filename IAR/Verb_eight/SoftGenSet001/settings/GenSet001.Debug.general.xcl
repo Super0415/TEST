@@ -1,0 +1,13 @@
+"D:\Program Files\IAR Systems\arm\bin\armproc.dll" 
+
+"D:\Program Files\IAR Systems\arm\bin\armjlink.dll" 
+
+"E:\SoftWare\SoftGenSet001\Debug\Exe\GenSet001.out" 
+
+--plugin "D:\Program Files\IAR Systems\arm\bin\armbat.dll" 
+
+--device_macro "D:\Program Files\IAR Systems\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+
+
+

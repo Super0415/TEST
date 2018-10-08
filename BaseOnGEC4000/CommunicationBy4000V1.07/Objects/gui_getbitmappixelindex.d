@@ -1,0 +1,16 @@
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUI_GetBitmapPixelIndex.c
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUI_Private.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUI_Protected.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUI.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUI_ConfDefaults.h
+.\objects\gui_getbitmappixelindex.o: .\ucGUI\Config\GUIConf.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUIType.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\LCD.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUIVersion.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\LCD_Protected.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUIDebug.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\GUI_X.h
+.\objects\gui_getbitmappixelindex.o: .\ucGUI\WM\WM_GUI.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\LCD_Private.h
+.\objects\gui_getbitmappixelindex.o: ucGUI\Core\LCD_ConfDefaults.h
+.\objects\gui_getbitmappixelindex.o: .\ucGUI\Config\LCDConf.h

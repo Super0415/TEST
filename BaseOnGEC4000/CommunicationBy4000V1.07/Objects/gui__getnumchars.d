@@ -1,0 +1,14 @@
+.\objects\gui__getnumchars.o: ucGUI\Core\GUI__GetNumChars.c
+.\objects\gui__getnumchars.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\gui__getnumchars.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gui__getnumchars.o: ucGUI\Core\GUI_Protected.h
+.\objects\gui__getnumchars.o: ucGUI\Core\GUI.h
+.\objects\gui__getnumchars.o: ucGUI\Core\GUI_ConfDefaults.h
+.\objects\gui__getnumchars.o: .\ucGUI\Config\GUIConf.h
+.\objects\gui__getnumchars.o: ucGUI\Core\GUIType.h
+.\objects\gui__getnumchars.o: ucGUI\Core\LCD.h
+.\objects\gui__getnumchars.o: ucGUI\Core\GUIVersion.h
+.\objects\gui__getnumchars.o: ucGUI\Core\LCD_Protected.h
+.\objects\gui__getnumchars.o: ucGUI\Core\GUIDebug.h
+.\objects\gui__getnumchars.o: ucGUI\Core\GUI_X.h
+.\objects\gui__getnumchars.o: .\ucGUI\WM\WM_GUI.h

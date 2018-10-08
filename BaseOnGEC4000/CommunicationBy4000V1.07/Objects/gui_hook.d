@@ -1,0 +1,16 @@
+.\objects\gui_hook.o: ucGUI\Widget\GUI_HOOK.c
+.\objects\gui_hook.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\gui_hook.o: ucGUI\Widget\GUI_HOOK.h
+.\objects\gui_hook.o: .\ucGUI\WM\WM_Intern.h
+.\objects\gui_hook.o: .\ucGUI\WM\WM.h
+.\objects\gui_hook.o: .\ucGUI\Core\GUI_ConfDefaults.h
+.\objects\gui_hook.o: .\ucGUI\Config\GUIConf.h
+.\objects\gui_hook.o: .\ucGUI\Core\GUIType.h
+.\objects\gui_hook.o: .\ucGUI\Core\LCD.h
+.\objects\gui_hook.o: .\ucGUI\WM\WM_GUI.h
+.\objects\gui_hook.o: .\ucGUI\Core\GUI_Protected.h
+.\objects\gui_hook.o: .\ucGUI\Core\GUI.h
+.\objects\gui_hook.o: .\ucGUI\Core\GUIVersion.h
+.\objects\gui_hook.o: .\ucGUI\Core\LCD_Protected.h
+.\objects\gui_hook.o: .\ucGUI\Core\GUIDebug.h
+.\objects\gui_hook.o: .\ucGUI\Core\GUI_X.h

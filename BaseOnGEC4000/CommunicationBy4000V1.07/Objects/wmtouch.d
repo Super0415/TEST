@@ -1,0 +1,15 @@
+.\objects\wmtouch.o: ucGUI\WM\WMTouch.c
+.\objects\wmtouch.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\wmtouch.o: ucGUI\WM\WM_Intern.h
+.\objects\wmtouch.o: ucGUI\WM\WM.h
+.\objects\wmtouch.o: .\ucGUI\Core\GUI_ConfDefaults.h
+.\objects\wmtouch.o: .\ucGUI\Config\GUIConf.h
+.\objects\wmtouch.o: .\ucGUI\Core\GUIType.h
+.\objects\wmtouch.o: .\ucGUI\Core\LCD.h
+.\objects\wmtouch.o: ucGUI\WM\WM_GUI.h
+.\objects\wmtouch.o: .\ucGUI\Core\GUI_Protected.h
+.\objects\wmtouch.o: .\ucGUI\Core\GUI.h
+.\objects\wmtouch.o: .\ucGUI\Core\GUIVersion.h
+.\objects\wmtouch.o: .\ucGUI\Core\LCD_Protected.h
+.\objects\wmtouch.o: .\ucGUI\Core\GUIDebug.h
+.\objects\wmtouch.o: .\ucGUI\Core\GUI_X.h

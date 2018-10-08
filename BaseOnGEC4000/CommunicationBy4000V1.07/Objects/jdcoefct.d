@@ -1,0 +1,17 @@
+.\objects\jdcoefct.o: ucGUI\JPEG\jdcoefct.c
+.\objects\jdcoefct.o: ucGUI\JPEG\jinclude.h
+.\objects\jdcoefct.o: ucGUI\JPEG\jconfig.h
+.\objects\jdcoefct.o: .\ucGUI\Core\GUI.h
+.\objects\jdcoefct.o: .\ucGUI\Core\GUI_ConfDefaults.h
+.\objects\jdcoefct.o: .\ucGUI\Config\GUIConf.h
+.\objects\jdcoefct.o: .\ucGUI\Core\GUIType.h
+.\objects\jdcoefct.o: .\ucGUI\Core\LCD.h
+.\objects\jdcoefct.o: .\ucGUI\Core\GUIVersion.h
+.\objects\jdcoefct.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\jdcoefct.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\jdcoefct.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\jdcoefct.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\jdcoefct.o: ucGUI\JPEG\jpeglib.h
+.\objects\jdcoefct.o: ucGUI\JPEG\jmorecfg.h
+.\objects\jdcoefct.o: ucGUI\JPEG\jpegint.h
+.\objects\jdcoefct.o: ucGUI\JPEG\jerror.h

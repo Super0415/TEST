@@ -1,0 +1,29 @@
+/* ************************************************************************************** */
+/*                   ECU Maps Definition V1.1,  Do not modify any way!!!                  */
+/*                                   By: Wu Xue Kui                                       */
+/*                                     2011.05.04                                         */
+/* ************************************************************************************** */
+MapID Name               Value Begin Size  Type  Unit   Min    Max    Groop  Specification
+
+0    TempMapAdc          0      0    10    0     Null    0     4095   1     TempMap_digit
+1    TempMapTmp          32768  10   10    11    C      -40    160    1     TempMap_Temp
+2    PressMapAdc         0      20   10    0     Null    0     4095   2     PressMap_digit
+3    PressMapPrs         0      30   10    0     Bar     0     5000   2     PressMap_Press
+4    LevelMapAdc         0      40   10    0     Null    0     4095   3     LevelMap_digit
+5    LevelMapLvl         0      50   10    3     %       0     100    3     LevelMap_Level
+6    OilPressWarn_n      0      60   10    0     rpm     0     6000   4     OilPressWarn_Speed
+7    OilPressWarn_p      0      70   10    0     Bar     0     6000   4     OilPressWarn_Press
+8    OilPressStop_n      0      80   10    0     rpm     0     6000   4     OilPressStop_Speed
+9    OilPressStop_p      0      90   10    0     Bar     0     6000   4     OilPressStop_Press
+10   Statistics_Speed    0      100  10    0     rpm     0     6000   5     Statistics_Speed
+11   Statistics_Power    0      110  10    3     KW      0     6000   5     Statistics_Power
+12   CurveBackup1        0      120  10    0     Null    0     65535  6     CurveBackup1
+13   CurveBackup2        0      130  10    0     Null    0     65535  6     CurveBackup2
+14   CurveBackup3        0      140  10    0     Null    0     65535  6     CurveBackup3
+15   CurveBackup4        0      150  10    0     Null    0     65535  6     CurveBackup4
+16   CurveBackup5        0      160  10    0     Null    0     65535  6     CurveBackup5
+17   CurveBackup6        0      170  10    0     Null    0     65535  6     CurveBackup6
+18   CurveBackup7        0      180  10    0     Null    0     65535  6     CurveBackup7
+19   CurveBackup8        0      190  10    0     Null    0     65535  6     CurveBackup8
+20   DataPlate_D         0      200  200   0     Null    0     65535  7     DataPlate_D
+/* ************************************ End ****************************************** */

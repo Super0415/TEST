@@ -1,0 +1,12 @@
+.\objects\guicolor2index.o: ucGUI\Core\GUIColor2Index.c
+.\objects\guicolor2index.o: ucGUI\Core\GUI_Protected.h
+.\objects\guicolor2index.o: ucGUI\Core\GUI.h
+.\objects\guicolor2index.o: ucGUI\Core\GUI_ConfDefaults.h
+.\objects\guicolor2index.o: .\ucGUI\Config\GUIConf.h
+.\objects\guicolor2index.o: ucGUI\Core\GUIType.h
+.\objects\guicolor2index.o: ucGUI\Core\LCD.h
+.\objects\guicolor2index.o: ucGUI\Core\GUIVersion.h
+.\objects\guicolor2index.o: ucGUI\Core\LCD_Protected.h
+.\objects\guicolor2index.o: ucGUI\Core\GUIDebug.h
+.\objects\guicolor2index.o: ucGUI\Core\GUI_X.h
+.\objects\guicolor2index.o: .\ucGUI\WM\WM_GUI.h

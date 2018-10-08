@@ -1,0 +1,17 @@
+.\objects\jdmaster.o: ucGUI\JPEG\jdmaster.c
+.\objects\jdmaster.o: ucGUI\JPEG\jinclude.h
+.\objects\jdmaster.o: ucGUI\JPEG\jconfig.h
+.\objects\jdmaster.o: .\ucGUI\Core\GUI.h
+.\objects\jdmaster.o: .\ucGUI\Core\GUI_ConfDefaults.h
+.\objects\jdmaster.o: .\ucGUI\Config\GUIConf.h
+.\objects\jdmaster.o: .\ucGUI\Core\GUIType.h
+.\objects\jdmaster.o: .\ucGUI\Core\LCD.h
+.\objects\jdmaster.o: .\ucGUI\Core\GUIVersion.h
+.\objects\jdmaster.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\jdmaster.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\jdmaster.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\jdmaster.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\jdmaster.o: ucGUI\JPEG\jpeglib.h
+.\objects\jdmaster.o: ucGUI\JPEG\jmorecfg.h
+.\objects\jdmaster.o: ucGUI\JPEG\jpegint.h
+.\objects\jdmaster.o: ucGUI\JPEG\jerror.h

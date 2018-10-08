@@ -1,0 +1,12 @@
+.\objects\gui__reducerect.o: ucGUI\Core\GUI__ReduceRect.c
+.\objects\gui__reducerect.o: ucGUI\Core\GUI_Protected.h
+.\objects\gui__reducerect.o: ucGUI\Core\GUI.h
+.\objects\gui__reducerect.o: ucGUI\Core\GUI_ConfDefaults.h
+.\objects\gui__reducerect.o: .\ucGUI\Config\GUIConf.h
+.\objects\gui__reducerect.o: ucGUI\Core\GUIType.h
+.\objects\gui__reducerect.o: ucGUI\Core\LCD.h
+.\objects\gui__reducerect.o: ucGUI\Core\GUIVersion.h
+.\objects\gui__reducerect.o: ucGUI\Core\LCD_Protected.h
+.\objects\gui__reducerect.o: ucGUI\Core\GUIDebug.h
+.\objects\gui__reducerect.o: ucGUI\Core\GUI_X.h
+.\objects\gui__reducerect.o: .\ucGUI\WM\WM_GUI.h

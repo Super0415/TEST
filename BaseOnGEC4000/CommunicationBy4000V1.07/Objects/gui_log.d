@@ -1,0 +1,14 @@
+.\objects\gui_log.o: ucGUI\Core\GUI_Log.c
+.\objects\gui_log.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gui_log.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\gui_log.o: ucGUI\Core\GUI_Protected.h
+.\objects\gui_log.o: ucGUI\Core\GUI.h
+.\objects\gui_log.o: ucGUI\Core\GUI_ConfDefaults.h
+.\objects\gui_log.o: .\ucGUI\Config\GUIConf.h
+.\objects\gui_log.o: ucGUI\Core\GUIType.h
+.\objects\gui_log.o: ucGUI\Core\LCD.h
+.\objects\gui_log.o: ucGUI\Core\GUIVersion.h
+.\objects\gui_log.o: ucGUI\Core\LCD_Protected.h
+.\objects\gui_log.o: ucGUI\Core\GUIDebug.h
+.\objects\gui_log.o: ucGUI\Core\GUI_X.h
+.\objects\gui_log.o: .\ucGUI\WM\WM_GUI.h
